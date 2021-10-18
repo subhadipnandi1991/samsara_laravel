@@ -3,13 +3,14 @@
 @section('content')
 <div class="row">
   <div class="col-4 p-5" id="MyLoginContainer">
-    <form>
+    <form action="login" method="post">
       <h2 class="m-3 text-center">Sign In</h2>
       <div class="form-group">
-        <input type="email" class="form-control m-3" id="email" aria-describedby="emailHelp" placeholder="name@work-email.com">
+        @csrf
+        <input type="email" class="form-control m-3" name="email" id="email" aria-describedby="emailHelp" placeholder="name@work-email.com">
       </div>
       <div class="form-group">
-        <input type="password" class="form-control m-3" id="password" placeholder="Password">
+        <input type="password" class="form-control m-3" name="password" id="password" placeholder="Password">
       </div>
       <button type="submit" class="btn btn-primary mx-3 w-100">Sign In</button>
       <div class="text-center row m-3 px-5">
