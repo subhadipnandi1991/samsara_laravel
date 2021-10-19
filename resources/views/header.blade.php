@@ -31,5 +31,6 @@
       <span>Hello, {{session('user.name')}} |</span>
       <span><a href="logout">Logout</a></span>
     @endif
+    <button type="button" class="btn btn-primary mx-3">CHECK OUR PRICES</button>
   </div>
 </nav>

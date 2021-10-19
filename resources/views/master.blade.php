@@ -14,5 +14,40 @@
   </body>
   <style>
 
+  footer#custom-footer {
+    font-family: Roboto,sans-serif;
+    position: relative;
+    padding: 80px 0;
+    background: #00263e;
+  }
+
+  footer#custom-footer .list-flat a {
+    font-size: 13px;
+    line-height: 22px;
+    font-weight: 400;
+  }
+
+  footer#custom-footer .title a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 1em;
+
+  }
+
+  footer#custom-footer .list-flat a,
+  footer#custom-footer .title a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  footer#custom-footer ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  footer#custom-footer li {
+    margin-bottom: 12px !important;
+  }
   </style>
 </html>
