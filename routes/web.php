@@ -19,4 +19,12 @@ Route::get('/login', function () {
 });
 
 Route::post('/login', [UserController::class, 'login']);
+Route::get('/logout', function() {
+  if (session()->has('user')) {
+    session()->pull('user');
+  }
+  return redirect('/');
+});
+
 Route::get('/', [HomeController::class, 'index']);
+Route::view('/', 'homepage');

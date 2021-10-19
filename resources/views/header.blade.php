@@ -22,6 +22,14 @@
         <a class="nav-link" href="#">Company</a>
       </li>
     </ul>
+  </div>
 
+  <div class="px-5">
+    @if (!session('user'))
+      <span><a href="login">Login</a></span>
+    @else
+      <span>Hello, {{session('user.name')}} |</span>
+      <span><a href="logout">Logout</a></span>
+    @endif
   </div>
 </nav>
