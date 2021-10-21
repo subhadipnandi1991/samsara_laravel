@@ -68,23 +68,25 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-md-6">
-        <img src="https://images.ctfassets.net/bx9krvy0u3sx/4evkfX9H4vFGqTr268gY9Z/0202ee3bc4ccd161f850b158e863551f/Group_5.svg" alt="globe">
-        <select name="select-region" onchange="saveTheme(this.value)" class="select-region">
-					<option value="BE">Belgique</option>
-					<option value="CA">Canada</option>
-					<option value="FR-CA">Canada - Français</option>
-					<option value="DE">Deutschland</option>
-					<option value="FR">France</option>
-					<option value="MX">México</option>
-					<option value="NL">Nederland</option>
-					<option value="AT">Österreich</option>
-					<option value="CH">Switzerland</option>
-					<option value="UK">United Kingdom</option>
-					<option value="IE">Ireland</option>
-					<option value="US" selected="">United States</option>
-				</select>
+        <div class="lang-select">
+          <img src="https://images.ctfassets.net/bx9krvy0u3sx/4evkfX9H4vFGqTr268gY9Z/0202ee3bc4ccd161f850b158e863551f/Group_5.svg" alt="globe">
+          <select name="select-region" class="select-region">
+  					<option value="BE">Belgique</option>
+  					<option value="CA">Canada</option>
+  					<option value="FR-CA">Canada - Français</option>
+  					<option value="DE">Deutschland</option>
+  					<option value="FR">France</option>
+  					<option value="MX">México</option>
+  					<option value="NL">Nederland</option>
+  					<option value="AT">Österreich</option>
+  					<option value="CH">Switzerland</option>
+  					<option value="UK">United Kingdom</option>
+  					<option value="IE">Ireland</option>
+  					<option value="US" selected="">United States</option>
+  				</select>
+        </div>
       </div>
-      <div class="col-xs-12 col-md-6">
+      <div class="col-xs-12 col-md-6 copyright text-end">
         <a href="#">
           <img src="//images.ctfassets.net/bx9krvy0u3sx/6S0h2nWn8P6NkcSYIHTxVq/5e069c5335024d3ebb593632f53b0b2a/facebook_1.svg">
         </a>
@@ -103,25 +105,25 @@
       </div>
 
     </div>
-    <div class="row">
-			<div class="col">
-				<ul class="list-flat flex flex-wrap sm-12 space-bottom-0">
-					<li class=""><a href="#">Privacy Policy</a></li>
-					<li class=""><a href="#">Candidate Privacy Notice</a></li>
-					<li class=""><a href="#">Website Terms of Service</a></li>
+    <div class="row under-footer">
+			<div class="col-md-6 col-xs-12">
+				<ul class="list-flat web-terms flex flex-wrap sm-12 space-bottom-0">
+					<li class=""><a href="#">Privacy Policy |</a></li>
+					<li class=""><a href="#">Candidate Privacy Notice |</a></li>
+					<li class=""><a href="#">Website Terms of Service |</a></li>
 					<li class=""><a href="#">Cookie Policy</a></li>
-					<li class=""><a href="#">Hardware Warranty</a></li>
-					<li class=""><a href="#">Product Terms of Service</a></li>
-					<li class=""><a href="#">Hosted Software SLA</a></li>
+					<li class=""><a href="#">Hardware Warranty |</a></li>
+					<li class=""><a href="#">Product Terms of Service |</a></li>
+					<li class=""><a href="#">Hosted Software SLA |</a></li>
 					<li class=""><a href="#">Partner Code of Conduct</a></li>
 				</ul>
 			</div>
-			<div class="xs-12 col space-top-0 white-text">
-				<div class="logo-container visible-m">
+			<div class="col-md-6 col-xs-12 text-white text-end">
+				<!-- <div class="logo-container visible-m">
 					<a href="/" title="samsara" class="footer-logo">
 						<img src="//images.ctfassets.net/bx9krvy0u3sx/2hwGCRfbCqRSteyXyysIum/356a3761737d6098d660c076ea76310c/Group__1_.svg" alt="" class="hidden">
 					</a>
-				</div>
+				</div> -->
 				© 2021 Samsara Inc.
 			</div>
 		</div>

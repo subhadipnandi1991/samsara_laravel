@@ -48,6 +48,65 @@
 
   footer#custom-footer li {
     margin-bottom: 12px !important;
+
   }
+
+  footer#custom-footer .web-terms li {
+    display: inline;
+  }
+
+  footer#custom-footer .lang-select {
+    width: 216px;
+    padding: 15px;
+    border: 1px solid #b2bec5;
+  }
+
+  footer#custom-footer .lang-select img {
+      height: 23px;
+      width: 23px;
+  }
+
+  footer#custom-footer .select-region {
+    color: #fff;
+    background: url(https://www.samsara.com/app/images/white-dropdown-arrow.png);
+    background-size: 38px;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    padding-right: 0;
+    line-height: 22px;
+    width: 100%;
+    font-size: 13px;
+    font-weight: 400;
+    opacity: .9;
+    border: 0;
+    appearance: none;
+    cursor: pointer;
+    padding: 0 12px 0 0;
+    border-radius: 0;
+  }
+
+  footer#custom-footer .copyright {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #fff;
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  footer#custom-footer .copyright img{
+    width: 22px;
+    height: 22px;
+    margin-left: 40px;
+    margin-right: 0;
+  }
+
+  footer#custom-footer .under-footer {
+    border-top: 1px solid #4c5e64;
+    padding-top: 20px;
+  }
+
+
   </style>
 </html>
