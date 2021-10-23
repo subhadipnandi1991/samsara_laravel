@@ -14,6 +14,25 @@
   </body>
   <style>
 
+  .hero--video > div {
+      /* position: absolute; */
+      /* overflow: hidden; */
+      /* top: 0; */
+      /* left: 0; */
+      /* width: 100%; */
+      /* height: 100%; */
+  }
+
+  .hero--video video {
+    width: 100%;
+    max-width: none;
+    min-height: 100%;
+    position: relative;
+    -o-object-fit: cover;
+    object-fit: cover;
+    top: 50%;
+}
+
   footer#custom-footer {
     font-family: Roboto,sans-serif;
     position: relative;
@@ -106,6 +125,7 @@
     border-top: 1px solid #4c5e64;
     padding-top: 20px;
   }
+
 
 
   </style>
