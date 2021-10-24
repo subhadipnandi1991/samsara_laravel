@@ -14,6 +14,40 @@
   </body>
   <style>
 
+  .my-link span a {
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .lg-container {
+    max-width: 1080px;
+  }
+
+  .home-content {
+    width: 100%;
+    margin: 215px;
+    padding-right: 22px;
+    padding-left: 22px;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .header-text h1 {
+    font-size: 58px;
+  }
+
+  .bg-blue-lighter {
+    background-color: rgba(240,246,254,1);
+  }
+  .-mx-gap {
+    margin-left: -11px;
+    margin-right: -11px;
+  }
+
+  .hero--video {
+    /* height: 600px; */
+  }
+
   .hero--video > div {
       /* position: absolute; */
       /* overflow: hidden; */
@@ -31,7 +65,14 @@
     -o-object-fit: cover;
     object-fit: cover;
     top: 50%;
-}
+  }
+
+  .my-tag p {
+    line-height: 26px;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 26px;
+  }
 
   footer#custom-footer {
     font-family: Roboto,sans-serif;
@@ -125,8 +166,6 @@
     border-top: 1px solid #4c5e64;
     padding-top: 20px;
   }
-
-
 
   </style>
 </html>

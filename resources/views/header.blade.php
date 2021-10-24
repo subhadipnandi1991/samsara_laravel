@@ -4,7 +4,7 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse w-50" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <a class="nav-link" href="#">Products</a>
@@ -24,9 +24,9 @@
     </ul>
   </div>
 
-  <div class="px-5">
+  <div class="my-link px-5">
     @if (!session('user'))
-      <span><a href="login">Login</a></span>
+      <span><a class="text-dark" href="login">Login</a></span>
     @else
       <span>Hello, {{session('user.name')}} |</span>
       <span><a href="logout">Logout</a></span>
