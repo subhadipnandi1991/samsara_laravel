@@ -39,6 +39,13 @@
   .bg-blue-lighter {
     background-color: rgba(240,246,254,1);
   }
+
+  .card--simple-border {
+      min-height: 150px;
+      border-left: 1px solid rgba(0,38,62,.12);
+      border-bottom: 0;
+  }
+
   .-mx-gap {
     margin-left: -11px;
     margin-right: -11px;
@@ -67,6 +74,25 @@
     top: 50%;
   }
 
+  .frame-prop {
+    width: 100%;
+    height: 100%;
+  }
+
+  .w-8\/12 {
+    width: 66.66%;
+  }
+
+  .video-frameless {
+    padding-bottom: 44.6%;
+    box-shadow: 1px 0 41px 2px rgba(0,38,62,.06);
+  }
+
+  .video-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
   .my-tag p {
     line-height: 26px;
     font-weight: 400;
@@ -74,11 +100,28 @@
     margin-bottom: 26px;
   }
 
+  .bg-blue-dark {
+    background-color: #00263e;
+  }
+
+  .py-80 {
+    padding: 80px 0;
+  }
+
+  .custom-logo img {
+    width: 151px;
+  }
+
+  .p-large {
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
   footer#custom-footer {
     font-family: Roboto,sans-serif;
     position: relative;
     padding: 80px 0;
-    background: #00263e;
   }
 
   footer#custom-footer .list-flat a {
