@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Samsara</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="{{ URL::asset('assets/css/main.css') }}"> -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
@@ -13,6 +14,25 @@
     {{ View::make('footer') }}
   </body>
   <style>
+  .fs-48 {
+    font-size: 48px;
+  }
+
+  .py-120 {
+    padding: 120px 0;
+  }
+
+  .text-blue {
+    color: rgba(3,132,251,1);
+  }
+
+  .w-400 {
+    max-width: 400px;
+  }
+
+  .text-xl{
+    font-size: 1.25rem;
+  }
 
   .my-link span a {
     text-decoration: none;
