@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,5 +30,5 @@ Route::get('/logout', function() {
 Route::get('/', [HomeController::class, 'index']);
 Route::view('/', 'homepage');
 
-Route::get('/products/', [ProductOverviewController::class, 'index']);
-Route::view('/products/', 'productsOverview');
+Route::get('/products/', [ProductController::class, 'index']);
+Route::view('/products/', 'products');
