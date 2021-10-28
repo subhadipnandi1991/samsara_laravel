@@ -30,5 +30,5 @@ Route::get('/logout', function() {
 Route::get('/', [HomeController::class, 'index']);
 Route::view('/', 'homepage');
 
-Route::get('/products/', [ProductController::class, 'index']);
+Route::get('/products/', [ProductController::class, 'productDetails']);
 // Route::view('/products/', 'products');

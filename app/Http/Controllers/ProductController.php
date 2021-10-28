@@ -7,14 +7,16 @@ use App\Models\Product;
 
 class ProductController extends Controller
 {
-  public function index()
+  public function productDetails()
   {
-    $data = Product::all();
+    $allData = Product::all();
+    // $someData = Product::select('name', 'description')->where('product-category', 'Video-Based Safety');
+    $category = Product::select('product-category')->distinct()->get();
 
     return view('products', [
-      'results' => $data
+      'productDetails' => $allData,
+      'distinctCategory' => $category
     ]);
-
-    // return "this is product page";
   }
+
 }
