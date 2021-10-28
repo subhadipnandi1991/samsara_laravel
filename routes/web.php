@@ -31,4 +31,4 @@ Route::get('/', [HomeController::class, 'index']);
 Route::view('/', 'homepage');
 
 Route::get('/products/', [ProductController::class, 'index']);
-Route::view('/products/', 'products');
+// Route::view('/products/', 'products');

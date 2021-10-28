@@ -14,6 +14,21 @@
     {{ View::make('footer') }}
   </body>
   <style>
+  .custom-list {
+    padding-bottom: 5px;
+  }
+  .custom-anchor {
+    line-height: 26px;
+  }
+
+  .no-underline {
+    text-decoration: none;
+  }
+
+  .no-bullet-list {
+    list-style: none;
+  }
+
   .fs-48 {
     font-size: 48px;
   }
