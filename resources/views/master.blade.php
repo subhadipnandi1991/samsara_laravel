@@ -14,6 +14,12 @@
     {{ View::make('footer') }}
   </body>
   <style>
+
+  li.custom-list a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-decoration-color: rgba(3,132,251,1);
+  }
   .custom-list {
     padding-bottom: 5px;
   }
@@ -246,4 +252,30 @@
   }
 
   </style>
+
+  <script type="text/javascript">
+
+  $(document).ready(function() {
+    var stickyTop = $('.no-bullet-list').offset().top;
+
+    $(window).on('scroll load', function() {
+      var windowTop = $(window).scrollTop();
+
+      if (stickyTop < windowTop) {
+        $('.no-bullet-list').css('position', 'fixed');
+        $('.no-bullet-list').css('top', '0');
+      } else {
+        $('.no-bullet-list').css('position', 'relative');
+      }
+    });
+
+    $('li.custom-list a').on('click', function () {
+      $('li.custom-list a').each(function () {
+          $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+    });
+  });
+
+  </script>
 </html>
