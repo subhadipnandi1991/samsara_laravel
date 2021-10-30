@@ -47,17 +47,16 @@
     color: rgba(3,132,251,1);
   }
 
+  .small {
+    font-size: .875em !important;
+  }
+
   .w-400 {
     max-width: 400px;
   }
 
   .text-xl{
     font-size: 1.25rem;
-  }
-
-  .my-link span a {
-    text-decoration: none;
-    text-transform: uppercase;
   }
 
   .lg-container {
@@ -258,12 +257,20 @@
   $(document).ready(function() {
     var stickyTop = $('.no-bullet-list').offset().top;
 
+
+
     $(window).on('scroll load', function() {
       var windowTop = $(window).scrollTop();
 
+      if (windowTop >= 56) {
+        $('#secondary-menu').removeClass('d-none').addClass('fixed-top');
+      } else {
+        $('#secondary-menu').removeClass('fixed-top').addClass('d-none');
+      }
+
       if (stickyTop < windowTop) {
         $('.no-bullet-list').css('position', 'fixed');
-        $('.no-bullet-list').css('top', '0');
+        $('.no-bullet-list').css('top', '100px');
       } else {
         $('.no-bullet-list').css('position', 'relative');
       }
