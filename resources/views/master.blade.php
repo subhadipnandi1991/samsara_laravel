@@ -15,6 +15,12 @@
   </body>
   <style>
 
+  /* @media only screen and (min-width: 768px) { */
+    /* li.has-megamenu:hover .dropdown-menu {
+      display: block;
+    } */
+  /* } */
+
   li.custom-list a.active {
     font-weight: bold;
     text-decoration: underline;
@@ -257,7 +263,12 @@
   $(document).ready(function() {
     var stickyTop = $('.no-bullet-list').offset().top;
 
-
+      // $('li .has-megamenu').hover(function() {
+      //   if('div.dropdown-menu').hasClass('show') {
+          // $('div.dropdown-menu').removeClass('show')
+          // $('div.dropdown-menu').addClass('show');
+      //   }
+      // });
 
     $(window).on('scroll load', function() {
       var windowTop = $(window).scrollTop();
