@@ -20,6 +20,29 @@
       display: block;
     } */
   /* } */
+  .menu-link-header {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .no-left-pad {
+    padding-left: 0 !important;
+  }
+
+  li.menu-list {
+    list-style: none;
+  }
+
+  span.menu-image img {
+    width: 260px;
+    padding-top: 1rem;
+  }
+
+  span.menu-header {
+    color: #979797;
+    font-weight: 700;
+    padding-left: 2rem;
+  }
 
   li.custom-list a.active {
     font-weight: bold;
@@ -263,10 +286,12 @@
   $(document).ready(function() {
     var stickyTop = $('.no-bullet-list').offset().top;
 
-      // $('li .has-megamenu').hover(function() {
-      //   if('div.dropdown-menu').hasClass('show') {
-          // $('div.dropdown-menu').removeClass('show')
-          // $('div.dropdown-menu').addClass('show');
+      // $('li.has-megamenu').hover(function() {
+      //   console.log("hovered");
+      //   if ($('div.has-megamenu').hasClass('show')) {
+      //     console.log("has show");
+      //     $('div.dropdown-menu').removeClass('show')
+      //     // $('div.dropdown-menu').addClass('show');
       //   }
       // });
 
