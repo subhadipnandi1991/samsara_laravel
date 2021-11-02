@@ -14,7 +14,7 @@
     				<div class="dropdown-menu megamenu w-100" role="menu">
               <div class="container">
                 <div class="row pt-3 pb-2 g-3">
-      						<div class="col-md-7 col-sm-12">
+      						<div class="col-md-7 col-sm-12 menu-border">
                     <span class="menu-header text-uppercase">Products</span>
                     <div class="row pt-3">
                       <div class="col-md-6">
@@ -50,6 +50,9 @@
                         </ul>
                       </div>
                     </div>
+                    <span class="left-pad">
+                      <a class="text-uppercase no-underline small" href="#">Explore more products >></a>
+                    </span>
       						</div>
                   <div class="col-md-5 col-sm-12">
                     <span class="menu-header text-uppercase">Integrations</span>
@@ -84,7 +87,7 @@
     				<div class="dropdown-menu megamenu w-100" role="menu">
               <div class="container">
                 <div class="row g-3 pt-3 pb-2">
-      						<div class="col-md-7 col-sm-12">
+      						<div class="col-md-7 col-sm-12 menu-border">
                     <span class="menu-header text-uppercase">By business need</span>
                     <div class="row pt-3">
                       <div class="col-md-6">
@@ -207,7 +210,7 @@
                       <a  class="no-underline text-black menu-link-header" href="#">Delta Constructors</a>
                     </h1>
                     <p>Delta Constructors uses the Connected Operations Platform to improve safety and productivity</p>
-                    <a href="#">Read More</a>
+                    <a class="text-uppercase no-underline small" href="#">Read More</a>
       						</div>
       						<div class="col-md-3">
                     <span class="menu-header text-uppercase no-left-pad">Top Fleets 2020</span>
@@ -218,7 +221,7 @@
                       <a class="no-underline text-black menu-link-header"  href="#">ABF Freight</a>
                     </h1>
                     <p>Learn how ABF automates repetitive tasks, improves data accuracy and increases overall safety and efficiency</p>
-                    <a href="#">Read More</a>
+                    <a class="text-uppercase no-underline small" href="#">Read More</a>
       						</div><!-- end col-3 -->
       					</div><!-- end row -->
 
@@ -232,7 +235,7 @@
                 <div class="row g-3 pt-3 pb-2">
       						<div class="col-md-3">
                     <span class="menu-header text-uppercase">Resources</span>
-                    <ul>
+                    <ul class="pt-3">
                       <li class="menu-list">
                         <a  class="no-underline text-black menu-link-header" href="#">Blog</a>
                       </li>
@@ -278,7 +281,7 @@
                           <a  class="no-underline text-black menu-link-header" href="#">The Road Ahead</a>
                         </h1>
                         <p>Reduce costs and prepare for the future with a data-driven guide for connecting your operations</p>
-                        <a href="#">Read More</a>
+                        <a class="text-uppercase no-underline small" href="#">Read More</a>
           						</div>
 
           						<div class="col-md-4">
@@ -289,7 +292,7 @@
                           <a class="no-underline text-black menu-link-header" href="#">Supply Chain Visibilty</a>
                         </h1>
                         <p>Insights and learnings on how to tackle challenges such as labor shortages and fallouts from the pandemic</p>
-                        <a href="#">Read More</a>
+                        <a class="text-uppercase no-underline small" href="#">Read More</a>
           						</div><!-- end col-4 -->
 
           						<div class="col-md-4">
@@ -300,7 +303,7 @@
                           <a class="no-underline text-black menu-link-header" href="#">City Insights</a>
                         </h1>
                         <p>City leaders, urban planners and public works officials are turning to technology to connect their cities' oprations.</p>
-                        <a href="#">Read More</a>
+                        <a class="text-uppercase no-underline small" href="#">Read More</a>
           						</div><!-- end col-4 -->
                     </div>
                   </div>
@@ -315,7 +318,7 @@
                 <div class="row g-3 pt-3 pb-2">
       						<div class="col-md-3">
                     <span class="menu-header text-uppercase">Company</span>
-                    <ul>
+                    <ul class="pt-3">
                       <li class="menu-list">
                         <a class="no-underline text-black menu-link-header" href="#">About</a>
                       </li>
@@ -348,7 +351,7 @@
                         <h1>
                           <a class="no-underline text-black menu-link-header" href="#">Forbes Cloud 100 List Top 20</a>
                         </h1>
-                        <a href="#">Read More</a>
+                        <a class="text-uppercase no-underline small" href="#">Read More</a>
           						</div>
 
           						<div class="col-md-4">
@@ -358,7 +361,7 @@
                         <h1>
                           <a class="no-underline text-black menu-link-header" href="#">Financial Times Fastest Growing Companies</a>
                         </h1>
-                        <a href="#">Read More</a>
+                        <a class="text-uppercase no-underline small" href="#">Read More</a>
           						</div><!-- end col-3 -->
 
           						<div class="col-md-4">
@@ -368,7 +371,7 @@
                         <h1>
                           <a class="no-underline text-black menu-link-header" href="#">LinkedIn's 2021 Top Startups List</a>
                         </h1>
-                        <a href="#">Read More</a>
+                        <a class="text-uppercase no-underline small" href="#">Read More</a>
           						</div><!-- end col-3 -->
                     </div>
                   </div>

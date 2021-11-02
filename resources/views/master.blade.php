@@ -20,13 +20,22 @@
       display: block;
     } */
   /* } */
+
   .menu-link-header {
     font-size: 20px;
     font-weight: bold;
   }
 
+  .menu-border {
+    border-right: 1px solid #e6e6e6;
+  }
+
   .no-left-pad {
     padding-left: 0 !important;
+  }
+
+  .left-pad {
+    padding-left: 2rem !important;
   }
 
   li.menu-list {
