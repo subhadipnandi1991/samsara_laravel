@@ -14,13 +14,6 @@
     {{ View::make('footer') }}
   </body>
   <style>
-
-  /* @media only screen and (min-width: 768px) { */
-    /* li.has-megamenu:hover .dropdown-menu {
-      display: block;
-    } */
-  /* } */
-
   .menu-link-header {
     font-size: 20px;
     font-weight: bold;

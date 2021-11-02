@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\BlogController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,4 +32,6 @@ Route::get('/', [HomeController::class, 'index']);
 Route::view('/', 'homepage');
 
 Route::get('/products/', [ProductController::class, 'productDetails']);
+Route::get('/blog/', [BlogController::class, 'blogDetails']);
+
 // Route::view('/products/', 'products');

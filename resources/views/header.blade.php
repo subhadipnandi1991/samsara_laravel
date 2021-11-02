@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="row w-100">
     <div class="col-md-3">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -87,7 +87,7 @@
     				<div class="dropdown-menu megamenu w-100" role="menu">
               <div class="container">
                 <div class="row g-3 pt-3 pb-2">
-      						<div class="col-md-7 col-sm-12 menu-border">
+      						<div class="col-md-7 col-sm-12 menu-border  ">
                     <span class="menu-header text-uppercase">By business need</span>
                     <div class="row pt-3">
                       <div class="col-md-6">
