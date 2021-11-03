@@ -411,7 +411,7 @@
     </div>
     <div class="col-md-3">
       <div class="my-link px-5">
-        <button type="button" class="btn btn-danger small px-4 py-3 mx-3">CHECK OUR PRICES</button>
+        <button type="button" class="btn btn-primary small px-4 py-3 mx-3">CHECK OUR PRICES</button>
       </div>
     </div>
 
