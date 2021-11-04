@@ -14,6 +14,11 @@
     {{ View::make('footer') }}
   </body>
   <style>
+
+  .blog-card {
+    height: 480px;
+  }
+
   .menu-link-header {
     font-size: 20px;
     font-weight: bold;
