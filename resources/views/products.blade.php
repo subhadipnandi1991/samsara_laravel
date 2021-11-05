@@ -8,7 +8,7 @@
   </div>
   <div class="row">
     <div class="col-md-3 p-4">
-      <ul class="no-bullet-list">
+      <ul class="no-bullet-list sticky-list">
         @foreach($distinctCategory as $category)
         <li class="custom-list">
           <a class="custom-anchor no-underline text-black" href="#{{ $category['product-category'] }}">{{ $category['product-category'] }}</a>

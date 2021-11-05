@@ -14,6 +14,13 @@
     {{ View::make('footer') }}
   </body>
   <style>
+  .author-info {
+    margin-top: -50px;
+  }
+  .author-image img{
+    width: 72px;
+    height: 72px;
+  }
 
   .blog-card {
     height: 480px;
@@ -312,11 +319,12 @@
       }
 
       if (stickyTop < windowTop) {
-        $('.no-bullet-list').css('position', 'fixed');
-        $('.no-bullet-list').css('top', '100px');
+        $('.sticky-list').css('position', 'fixed');
+        $('.sticky-list').css('top', '100px');
       } else {
-        $('.no-bullet-list').css('position', 'relative');
+        $('.sticky-list').css('position', 'relative');
       }
+
     });
 
     $('li.custom-list a').on('click', function () {
@@ -325,6 +333,14 @@
       })
       $(this).addClass('active');
     });
+
+    $('.read-more-blog').on('click', function () {
+      $link = window.location.hash;
+      $link = $link.substr(1);
+      $("div#main-blog-page").addClass('d-none');
+      $("div#"+$link).removeClass('d-none').addClass('d-block');
+    });
+
   });
 
   </script>
