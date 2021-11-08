@@ -19,4 +19,12 @@ class BlogController extends Controller
       'allCategory' => $allCategory
     ]);
   }
+
+  public function blogPage(int $id)
+  {
+    $blogDetails = Blog::where('id', $id)->get();
+    return view('blogDetails', [
+      'singlePageDetails' => $blogDetails
+    ]);
+  }
 }

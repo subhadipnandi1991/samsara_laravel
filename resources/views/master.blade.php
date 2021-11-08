@@ -17,6 +17,7 @@
   .author-info {
     margin-top: -50px;
   }
+
   .author-image img{
     width: 72px;
     height: 72px;
@@ -334,12 +335,12 @@
       $(this).addClass('active');
     });
 
-    $('.read-more-blog').on('click', function () {
-      $link = window.location.hash;
-      $link = $link.substr(1);
-      $("div#main-blog-page").addClass('d-none');
-      $("div#"+$link).removeClass('d-none').addClass('d-block');
-    });
+    // $('.read-more-blog').on('click', function () {
+    //   $link = window.location.hash;
+    //   $link = $link.substr(1);
+    //   $("div#main-blog-page").addClass('d-none');
+    //   $("div#"+$link).removeClass('d-none').addClass('d-block');
+    // });
 
   });
 
