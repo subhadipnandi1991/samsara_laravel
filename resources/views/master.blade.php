@@ -315,15 +315,36 @@
     // desc = "Building a New Industrial Workforce: How AI and Digital Tools are Helping Combat the Labor Shortage";
     // console.log(cutString(desc));
 
-    function fetchBlogsByCategory() {
+    function fetchAllCategories() {
       $.ajax({
-        url: '/fetch-blogs-by-category',
+        url: '/fetch-all-categories',
+        method: 'get',
+        dataType: 'json',
+        success: function (response) {
+          // console.log(response.blogsByCategory);
+          $('.category-list').append(
+            '<li class="custom-list">\
+              <a class="custom-anchor no-underline text-black" href="#">View All</a>\
+            </li>');
+          $.each(response.allCategories, function(key, item) {
+            $('.category-list').append(
+              '<li class="custom-list">\
+                <a class="custom-anchor no-underline text-black" href="#">'+ item["blog-category"] +'</a>\
+              </li>');
+          });
+        }
+        });
+    }
+
+    function fetchAllBlogs() {
+      $.ajax({
+        url: '/fetch-all-blogs',
         method: 'get',
         dataType: 'json',
         success: function (response) {
           // console.log(response.blogsByCategory);
 
-          $.each(response.blogsByCategory, function(key, item) {
+          $.each(response.allBlogs, function(key, item) {
             $('.blog-area').append(
               '<div class="col-md-6 col-sm-12 single-blog-area">\
                 <div class="card m-4 blog-card">\
@@ -343,7 +364,9 @@
         });
     }
 
-    fetchBlogsByCategory();
+
+    fetchAllCategories()
+    fetchAllBlogs();
 
 
     var stickyTop = $('.no-bullet-list').offset().top;

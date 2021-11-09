@@ -28,11 +28,28 @@ class BlogController extends Controller
     ]);
   }
 
-  public function fetchBlogsByCategory() {
-    $blogsByCategory = Blog::all();
+  public function fetchAllBlogs() {
+    $allBlogs = Blog::all();
 
     return response()->json([
-      'blogsByCategory' => $blogsByCategory
+      'allBlogs' => $allBlogs
     ]);
   }
+
+  public function fetchAllCategories() {
+    $allCategories = BlogCategory::all();
+
+    return response()->json([
+      'allCategories' => $allCategories
+    ]);
+  }
+
+
+  // public function fetchBlogsByCategory() {
+  //   $blogsByCategory = Blog::all();
+  //
+  //   return response()->json([
+  //     'blogsByCategory' => $blogsByCategory
+  //   ]);
+  // }
 }
