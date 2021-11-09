@@ -299,6 +299,53 @@
   <script type="text/javascript">
 
   $(document).ready(function() {
+    var data ="Life at Samsara";
+
+    function cutString(data) {
+      if (data.length > 100) {
+        newdata = data.substr(0,100);
+
+        return newdata;
+      } else {
+        return data;
+      }
+
+    }
+    //
+    // desc = "Building a New Industrial Workforce: How AI and Digital Tools are Helping Combat the Labor Shortage";
+    // console.log(cutString(desc));
+
+    function fetchBlogsByCategory() {
+      $.ajax({
+        url: '/fetch-blogs-by-category',
+        method: 'get',
+        dataType: 'json',
+        success: function (response) {
+          // console.log(response.blogsByCategory);
+
+          $.each(response.blogsByCategory, function(key, item) {
+            $('.blog-area').append(
+              '<div class="col-md-6 col-sm-12 single-blog-area">\
+                <div class="card m-4 blog-card">\
+                  <img class="card-img-top" src="'+ item['display-image'] +'" alt="Card image cap">\
+                  <div class="card-body m-4">\
+                  <h5 class="card-title">'+ item['title'] +'</h5>\
+                  <a class="text-uppercase no-underline small font-bold" href="#">'+item['blog-category']+'</a>\
+                  <p class="card-text my-4">\
+                    '+ cutString(item['description']) +'\
+                  </p>\
+                  <a href="/blog/'+item.id+'" class="text-uppercase no-underline small font-bold read-more-blog">Read More</a>\
+                  </div>\
+                </div>\
+              </div>');
+          });
+        }
+        });
+    }
+
+    fetchBlogsByCategory();
+
+
     var stickyTop = $('.no-bullet-list').offset().top;
 
       // $('li.has-megamenu').hover(function() {
@@ -309,6 +356,7 @@
       //     // $('div.dropdown-menu').addClass('show');
       //   }
       // });
+
 
     $(window).on('scroll load', function() {
       var windowTop = $(window).scrollTop();

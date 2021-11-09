@@ -27,4 +27,12 @@ class BlogController extends Controller
       'singlePageDetails' => $blogDetails
     ]);
   }
+
+  public function fetchBlogsByCategory() {
+    $blogsByCategory = Blog::all();
+
+    return response()->json([
+      'blogsByCategory' => $blogsByCategory
+    ]);
+  }
 }
