@@ -324,12 +324,12 @@
           // console.log(response.blogsByCategory);
           $('.category-list').append(
             '<li class="custom-list">\
-              <a class="custom-anchor no-underline text-black" href="#">View All</a>\
+              <a class="custom-anchor no-underline text-black category-list-item" href="#0">View All</a>\
             </li>');
           $.each(response.allCategories, function(key, item) {
             $('.category-list').append(
               '<li class="custom-list">\
-                <a class="custom-anchor no-underline text-black" href="#">'+ item["blog-category"] +'</a>\
+                <a class="custom-anchor no-underline text-black category-list-item" data="'+ item.id +'" href="#'+ item.id +'">'+ item["blog-category"] +'</a>\
               </li>');
           });
         }
@@ -338,7 +338,7 @@
 
     function fetchAllBlogs() {
       $.ajax({
-        url: '/fetch-all-blogs',
+        url: '/fetch-all-blogs-n-categories',
         method: 'get',
         dataType: 'json',
         success: function (response) {
@@ -364,10 +364,49 @@
         });
     }
 
+    function fetchBlogsByCategory(id) {
+      $.ajax({
+        url: '/fetch-blogs-by-category/' + id,
+        type: 'get',
+        dataType: 'json',
+        success: function (response) {
+          console.log(response);
+          $('.blog-area').html('');
+          $.each(response.blogsByCategory, function(key, item) {
+            $('.blog-area').append(
+              '<div class="col-md-6 col-sm-12 single-blog-area">\
+                <div class="card m-4 blog-card">\
+                  <img class="card-img-top" src="'+ item['display-image'] +'" alt="Card image cap">\
+                  <div class="card-body m-4">\
+                  <h5 class="card-title">'+ item['title'] +'</h5>\
+                  <a class="text-uppercase no-underline small font-bold" href="#">'+item['blog-category']+'</a>\
+                  <p class="card-text my-4">\
+                    '+ cutString(item['description']) +'\
+                  </p>\
+                  <a href="/blog/'+item.id+'" class="text-uppercase no-underline small font-bold read-more-blog">Read More</a>\
+                  </div>\
+                </div>\
+              </div>');
+          });
+        }
+      });
+    }
 
-    fetchAllCategories()
+    fetchAllCategories();
     fetchAllBlogs();
 
+    $(document).on('click', '.category-list-item', function() {
+      var url = $(location).attr("href");
+      var splitUrl = url.split('#');
+
+      console.log(splitUrl[1]);
+      if (splitUrl[1] == 0) {
+        fetchAllBlogs();
+      } else {
+        fetchBlogsByCategory(splitUrl[1]);
+      }
+
+    });
 
     var stickyTop = $('.no-bullet-list').offset().top;
 

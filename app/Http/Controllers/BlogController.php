@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Blog;
 use App\Models\BlogCategory;
+use Illuminate\Support\Facades\DB;
 
 
 class BlogController extends Controller
@@ -28,8 +29,10 @@ class BlogController extends Controller
     ]);
   }
 
-  public function fetchAllBlogs() {
-    $allBlogs = Blog::all();
+  public function fetchAllBlogsAndCategories() {
+    $allBlogs = Blog::select('blog_categories.*', 'blogs.*')
+                ->join('blog_categories', 'blog_categories.id', '=', 'blogs.blog-category-id')
+                ->get();
 
     return response()->json([
       'allBlogs' => $allBlogs
@@ -44,12 +47,14 @@ class BlogController extends Controller
     ]);
   }
 
+  public function fetchBlogsByCategory(int $id) {
+    $blogsByCategory = Blog::select('blog_categories.*', 'blogs.*')
+                        ->join('blog_categories', 'blog_categories.id', '=', 'blogs.blog-category-id')
+                        ->where('blog_categories.id','=', $id)
+                        ->get();
 
-  // public function fetchBlogsByCategory() {
-  //   $blogsByCategory = Blog::all();
-  //
-  //   return response()->json([
-  //     'blogsByCategory' => $blogsByCategory
-  //   ]);
-  // }
+    return response()->json([
+      'blogsByCategory' => $blogsByCategory
+    ]);
+  }
 }

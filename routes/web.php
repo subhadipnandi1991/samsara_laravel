@@ -34,5 +34,6 @@ Route::view('/', 'homepage');
 Route::get('/products/', [ProductController::class, 'productDetails']);
 Route::get('/blog/', [BlogController::class, 'blogDetails']);
 Route::get('/blog/{id}', [BlogController::class, 'blogPage'])->name('blogDetails');
-Route::get('/fetch-all-blogs', [BlogController::class, 'fetchAllBlogs']);
+Route::get('/fetch-all-blogs-n-categories', [BlogController::class, 'fetchAllBlogsAndCategories']);
 Route::get('/fetch-all-categories', [BlogController::class, 'fetchAllCategories']);
+Route::get('/fetch-blogs-by-category/{id}', [BlogController::class, 'fetchBlogsByCategory'])->name('fetchBlogsByCategory');
