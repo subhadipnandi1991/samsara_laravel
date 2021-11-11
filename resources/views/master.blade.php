@@ -302,9 +302,9 @@
     var data ="Life at Samsara";
 
     function cutString(data) {
+      var addStr = '...';
       if (data.length > 100) {
-        newdata = data.substr(0,100);
-
+        newdata = data.substr(0,100).concat(addStr);
         return newdata;
       } else {
         return data;
@@ -324,12 +324,12 @@
           // console.log(response.blogsByCategory);
           $('.category-list').append(
             '<li class="custom-list">\
-              <a class="custom-anchor no-underline text-black category-list-item" href="#0">View All</a>\
+              <a class="custom-anchor no-underline text-black category-list-item" href="#" value="0">View All</a>\
             </li>');
           $.each(response.allCategories, function(key, item) {
             $('.category-list').append(
               '<li class="custom-list">\
-                <a class="custom-anchor no-underline text-black category-list-item" data="'+ item.id +'" href="#'+ item.id +'">'+ item["blog-category"] +'</a>\
+                <a class="custom-anchor no-underline text-black category-list-item" href="#" value="'+ item.id +'">'+ item["blog-category"] +'</a>\
               </li>');
           });
         }
@@ -344,6 +344,7 @@
         success: function (response) {
           // console.log(response.blogsByCategory);
 
+          $('.blog-area').html(''); // To clear blog area
           $.each(response.allBlogs, function(key, item) {
             $('.blog-area').append(
               '<div class="col-md-6 col-sm-12 single-blog-area">\
@@ -361,7 +362,7 @@
               </div>');
           });
         }
-        });
+      });
     }
 
     function fetchBlogsByCategory(id) {
@@ -392,18 +393,20 @@
       });
     }
 
-    fetchAllCategories();
-    fetchAllBlogs();
+    fetchAllCategories(); // load all categories in blog page at loading
+    fetchAllBlogs();      // load all blogs in blog page at loading
 
     $(document).on('click', '.category-list-item', function() {
-      var url = $(location).attr("href");
-      var splitUrl = url.split('#');
+      // var url = $(location).attr("href");
+      // var splitUrl = url.split('#');
+      //
+      // console.log(splitUrl[1]);
+      var id = $(this).attr('value');
 
-      console.log(splitUrl[1]);
-      if (splitUrl[1] == 0) {
+      if (id == 0) {
         fetchAllBlogs();
       } else {
-        fetchBlogsByCategory(splitUrl[1]);
+        fetchBlogsByCategory(id);
       }
 
     });
