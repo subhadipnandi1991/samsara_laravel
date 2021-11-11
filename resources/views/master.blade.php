@@ -321,7 +321,7 @@
         method: 'get',
         dataType: 'json',
         success: function (response) {
-          // console.log(response.blogsByCategory);
+
           $('.category-list').append(
             '<li class="custom-list">\
               <a class="custom-anchor no-underline text-black category-list-item" href="#" value="0">View All</a>\
@@ -333,7 +333,7 @@
               </li>');
           });
         }
-        });
+      });
     }
 
     function fetchAllBlogs() {
@@ -342,7 +342,6 @@
         method: 'get',
         dataType: 'json',
         success: function (response) {
-          // console.log(response.blogsByCategory);
 
           $('.blog-area').html(''); // To clear blog area
           $.each(response.allBlogs, function(key, item) {
@@ -352,7 +351,7 @@
                   <img class="card-img-top" src="'+ item['display-image'] +'" alt="Card image cap">\
                   <div class="card-body m-4">\
                   <h5 class="card-title">'+ item['title'] +'</h5>\
-                  <a class="text-uppercase no-underline small font-bold" href="#">'+item['blog-category']+'</a>\
+                  <a class="text-uppercase no-underline small font-bold blog-category-link" href="#" value="'+ item['blog-category-id'] +'">'+item['blog-category']+'</a>\
                   <p class="card-text my-4">\
                     '+ cutString(item['description']) +'\
                   </p>\
@@ -380,7 +379,7 @@
                   <img class="card-img-top" src="'+ item['display-image'] +'" alt="Card image cap">\
                   <div class="card-body m-4">\
                   <h5 class="card-title">'+ item['title'] +'</h5>\
-                  <a class="text-uppercase no-underline small font-bold" href="#">'+item['blog-category']+'</a>\
+                  <a class="text-uppercase no-underline small font-bold blog-category-link" href="#" value="'+ item['blog-category-id'] +'">'+item['blog-category']+'</a>\
                   <p class="card-text my-4">\
                     '+ cutString(item['description']) +'\
                   </p>\
@@ -396,7 +395,7 @@
     fetchAllCategories(); // load all categories in blog page at loading
     fetchAllBlogs();      // load all blogs in blog page at loading
 
-    $(document).on('click', '.category-list-item', function() {
+    $(document).on('click', '.blog-category-link, .category-list-item', function() {
       // var url = $(location).attr("href");
       // var splitUrl = url.split('#');
       //
