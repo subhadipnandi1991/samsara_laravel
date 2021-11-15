@@ -32,7 +32,8 @@ class BlogController extends Controller
   public function fetchAllBlogsAndCategories() {
     $allBlogs = Blog::select('blog_categories.*', 'blogs.*')
                 ->join('blog_categories', 'blog_categories.id', '=', 'blogs.blog-category-id')
-                ->get();
+                ->paginate(2);
+                // ->get();
 
     return response()->json([
       'allBlogs' => $allBlogs

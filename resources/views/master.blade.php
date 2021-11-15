@@ -297,9 +297,7 @@
   </style>
 
   <script type="text/javascript">
-
   $(document).ready(function() {
-    var data ="Life at Samsara";
 
     function cutString(data) {
       var addStr = '...';
@@ -321,7 +319,6 @@
         method: 'get',
         dataType: 'json',
         success: function (response) {
-
           $('.category-list').append(
             '<li class="custom-list">\
               <a class="custom-anchor no-underline text-black category-list-item" href="#" value="0">View All</a>\
@@ -336,30 +333,45 @@
       });
     }
 
-    function fetchAllBlogs() {
+
+    function fetchAllBlogs(id) {
       $.ajax({
-        url: '/fetch-all-blogs-n-categories',
+        url: '/fetch-all-blogs-n-categories?page=' + id,
         method: 'get',
         dataType: 'json',
         success: function (response) {
+          console.log(response.allBlogs.links);
 
           $('.blog-area').html(''); // To clear blog area
-          $.each(response.allBlogs, function(key, item) {
+          $.each(response.allBlogs.data, function(key, item) {
             $('.blog-area').append(
               '<div class="col-md-6 col-sm-12 single-blog-area">\
                 <div class="card m-4 blog-card">\
                   <img class="card-img-top" src="'+ item['display-image'] +'" alt="Card image cap">\
                   <div class="card-body m-4">\
-                  <h5 class="card-title">'+ item['title'] +'</h5>\
-                  <a class="text-uppercase no-underline small font-bold blog-category-link" href="#" value="'+ item['blog-category-id'] +'">'+item['blog-category']+'</a>\
-                  <p class="card-text my-4">\
-                    '+ cutString(item['description']) +'\
-                  </p>\
-                  <a href="/blog/'+item.id+'" class="text-uppercase no-underline small font-bold read-more-blog">Read More</a>\
+                    <h5 class="card-title">'+ item['title'] +'</h5>\
+                    <a class="text-uppercase no-underline small font-bold blog-category-link" href="#" value="'+ item['blog-category-id'] +'">'+item['blog-category']+'</a>\
+                    <p class="card-text my-4">\
+                      '+ cutString(item['description']) +'\
+                    </p>\
+                    <a href="/blog/'+item.id+'" class="text-uppercase no-underline small font-bold read-more-blog">Read More</a>\
                   </div>\
                 </div>\
               </div>');
           });
+          // $('.blog-area').append('<div class="justify-center text-center mb-4 flex w-full">\
+          //   <div class="pagination flex">\
+          //   <div class="flex">');
+          $.each(response.allBlogs.links, function(key,item) {
+            $('.blog-area').append(
+              '<div class="pagination cursor-pointer mx-1">\
+                <a href="'+ item.url +'">'+ item.label +'</a>\
+              </div>');
+          });
+          // $('.blog-area').append('\
+          // </div>\
+          // </div>\
+          // </div>');
         }
       });
     }
@@ -393,22 +405,29 @@
     }
 
     fetchAllCategories(); // load all categories in blog page at loading
-    fetchAllBlogs();      // load all blogs in blog page at loading
+    fetchAllBlogs(1);      // load all blogs in blog page at loading
 
+    $(document).on('click', '.pagination a', function(event) {
+      event.preventDefault();
+      console.log(this);
+      var p_no = $(this).attr('href').split('page=')[1];
+      fetchAllBlogs(p_no);
+    });
+
+
+    // function clickAction() {
     $(document).on('click', '.blog-category-link, .category-list-item', function() {
-      // var url = $(location).attr("href");
-      // var splitUrl = url.split('#');
-      //
-      // console.log(splitUrl[1]);
-      var id = $(this).attr('value');
+    var id = $(this).attr('value');
 
       if (id == 0) {
-        fetchAllBlogs();
+        fetchAllBlogs(1);
       } else {
         fetchBlogsByCategory(id);
       }
-
     });
+    // }
+
+    // clickAction();
 
     var stickyTop = $('.no-bullet-list').offset().top;
 
