@@ -52,7 +52,8 @@ class BlogController extends Controller
     $blogsByCategory = Blog::select('blog_categories.*', 'blogs.*')
                         ->join('blog_categories', 'blog_categories.id', '=', 'blogs.blog-category-id')
                         ->where('blog_categories.id','=', $id)
-                        ->get();
+                        ->paginate(2);
+                        // ->get();
 
     return response()->json([
       'blogsByCategory' => $blogsByCategory

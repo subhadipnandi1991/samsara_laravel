@@ -299,8 +299,8 @@
   <script type="text/javascript">
   $(document).ready(function() {
 
-    function cutString(data) {
-      var addStr = '...';
+    function cutString(data) {      // this function is to cut long string upto 100 characters
+      var addStr = '...';           // and adding dots at the end
       if (data.length > 100) {
         newdata = data.substr(0,100).concat(addStr);
         return newdata;
@@ -309,16 +309,17 @@
       }
 
     }
-    //
-    // desc = "Building a New Industrial Workforce: How AI and Digital Tools are Helping Combat the Labor Shortage";
-    // console.log(cutString(desc));
 
-    function fetchAllCategories() {
+    var allBlogs_counter = 0;
+    var blogsByCat_counter = 0;
+
+    function fetchAllCategories() {   // It only fetches the categories from databasesand showing at the left of the blog page
       $.ajax({
         url: '/fetch-all-categories',
         method: 'get',
         dataType: 'json',
         success: function (response) {
+
           $('.category-list').append(
             '<li class="custom-list">\
               <a class="custom-anchor no-underline text-black category-list-item" href="#" value="0">View All</a>\
@@ -335,14 +336,19 @@
 
 
     function fetchAllBlogs(id) {
+      if (allBlogs_counter == 0) {      //  this is used to see which function called at last
+        allBlogs_counter = 1;
+        blogsByCat_counter = 0;
+      }
+      console.log("blogsByCat_counter = " + blogsByCat_counter);
+      console.log("allBlogs_counter = " + allBlogs_counter);
       $.ajax({
         url: '/fetch-all-blogs-n-categories?page=' + id,
         method: 'get',
         dataType: 'json',
         success: function (response) {
-          console.log(response.allBlogs.links);
-
-          $('.blog-area').html(''); // To clear blog area
+          console.log('fetchAllBlogs called');
+          $('.blog-area').html('');           // To clear blog area
           $.each(response.allBlogs.data, function(key, item) {
             $('.blog-area').append(
               '<div class="col-md-6 col-sm-12 single-blog-area">\
@@ -359,70 +365,111 @@
                 </div>\
               </div>');
           });
-          // $('.blog-area').append('<div class="justify-center text-center mb-4 flex w-full">\
-          //   <div class="pagination flex">\
-          //   <div class="flex">');
-          $.each(response.allBlogs.links, function(key,item) {
-            $('.blog-area').append(
-              '<div class="pagination cursor-pointer mx-1">\
-                <a href="'+ item.url +'">'+ item.label +'</a>\
-              </div>');
-          });
-          // $('.blog-area').append('\
-          // </div>\
-          // </div>\
-          // </div>');
+          if (response.allBlogs.links.length > 3) {
+            // $('.blog-area').append('<div class="justify-center text-center mb-4 flex w-full">\
+            //   <div class="pagination flex">\
+            //   <div class="flex">');
+            $.each(response.allBlogs.links, function(key,item) {
+              $('.blog-area').append(
+                '<div class="cursor-pointer mx-1">\
+                  <a href="'+ item.url +'">'+ item.label +'</a>\
+                </div>');
+            });
+            // $('.blog-area').append('</div>\
+            //   </div>\
+            //   </div>');
+
+          }
         }
       });
     }
 
-    function fetchBlogsByCategory(id) {
+    function fetchBlogsByCategory(id, p_no) {
+      if (blogsByCat_counter == 0) {
+        blogsByCat_counter = 1;
+        allBlogs_counter = 0;
+      }
+      console.log("blogsByCat_counter = " + blogsByCat_counter);
+      console.log("allBlogs_counter = " + allBlogs_counter);
       $.ajax({
-        url: '/fetch-blogs-by-category/' + id,
+        url: '/fetch-blogs-by-category/'+ id + '?page=' + p_no,
         type: 'get',
         dataType: 'json',
         success: function (response) {
-          console.log(response);
+          // console.log(response.blogsByCategory.data);
+          console.log('fetchBlogsByCategory called');
+
           $('.blog-area').html('');
-          $.each(response.blogsByCategory, function(key, item) {
-            $('.blog-area').append(
-              '<div class="col-md-6 col-sm-12 single-blog-area">\
-                <div class="card m-4 blog-card">\
-                  <img class="card-img-top" src="'+ item['display-image'] +'" alt="Card image cap">\
-                  <div class="card-body m-4">\
-                  <h5 class="card-title">'+ item['title'] +'</h5>\
-                  <a class="text-uppercase no-underline small font-bold blog-category-link" href="#" value="'+ item['blog-category-id'] +'">'+item['blog-category']+'</a>\
-                  <p class="card-text my-4">\
-                    '+ cutString(item['description']) +'\
-                  </p>\
-                  <a href="/blog/'+item.id+'" class="text-uppercase no-underline small font-bold read-more-blog">Read More</a>\
+          $.each(response.blogsByCategory.data, function(key, item) {
+            // console.log(response.blogsByCategory);
+            if (item) {
+              $('.blog-area').append(
+                '<div class="col-md-6 col-sm-12 single-blog-area">\
+                  <div class="card m-4 blog-card">\
+                    <img class="card-img-top" src="'+ item['display-image'] +'" alt="Card image cap">\
+                    <div class="card-body m-4">\
+                    <h5 class="card-title">'+ item['title'] +'</h5>\
+                    <a class="text-uppercase no-underline small font-bold blog-category-link" href="#" value="'+ item['blog-category-id'] +'">'+item['blog-category']+'</a>\
+                    <p class="card-text my-4">\
+                      '+ cutString(item['description']) +'\
+                    </p>\
+                    <a href="/blog/'+item.id+'" class="text-uppercase no-underline small font-bold read-more-blog">Read More</a>\
+                    </div>\
                   </div>\
-                </div>\
-              </div>');
+                </div>');
+            } else {
+              $('.blog-area').append('<span>\
+              No data of this category is available\
+              </span>');
+            }
           });
+          if (response.blogsByCategory.links.length > 3) {
+            // console.log(response.blogsByCategory.links.length);
+            $.each(response.blogsByCategory.links, function(key, item) {
+              $('.blog-area').append(
+                '<div class="pagination cursor-pointer mx-1">\
+                  <a href="'+ item.url +'">'+ item.label +'</a>\
+                </div>');
+            });
+          }
         }
       });
     }
 
     fetchAllCategories(); // load all categories in blog page at loading
-    fetchAllBlogs(1);      // load all blogs in blog page at loading
+    fetchAllBlogs(1);      // load first page of blogs at loading
 
-    $(document).on('click', '.pagination a', function(event) {
-      event.preventDefault();
-      console.log(this);
-      var p_no = $(this).attr('href').split('page=')[1];
-      fetchAllBlogs(p_no);
+    $(document).on('click', '.pagination a', function(event) {  // This function is for pressing the pagination buttons
+                                                                // and going to the particular page
+      event.preventDefault();                                   // it prevents the default function of a tags
+      // console.log(this);
+      var p_no = $(this).attr('href').split('page=')[1];        // this take out the page no is being passed by pressing the pagination link
+      // if $(this).hasClass('by-all') {
+      //   console.log("yes! by-all");
+      // } else if $(this).hasClass('by-category') {
+      //   console.log("yes again! by-categorys");
+      // }
+
+      if (allBlogs_counter == 1) {
+        fetchAllBlogs(p_no);                                      // this calls the function to see all blogs to that page
+      } else if (blogsByCat_counter == 1) {
+      var split_c_no = $(this).attr('href').split('/')[4];
+      var c_no = split_c_no.split('?page')[0];
+      console.log("-->" + c_no);
+        fetchBlogsByCategory(c_no,p_no);
+      }
+
     });
 
 
     // function clickAction() {
     $(document).on('click', '.blog-category-link, .category-list-item', function() {
-    var id = $(this).attr('value');
+    var id = $(this).attr('value');     // by clicking on categories from category list or category on blog card it fetches the category id
 
       if (id == 0) {
         fetchAllBlogs(1);
       } else {
-        fetchBlogsByCategory(id);
+        fetchBlogsByCategory(id, 1);
       }
     });
     // }
