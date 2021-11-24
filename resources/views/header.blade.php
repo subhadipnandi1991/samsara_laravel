@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light">
   <div class="row w-100">
     <div class="col-md-3">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="/">Navbar</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -51,7 +51,7 @@
                       </div>
                     </div>
                     <span class="left-pad">
-                      <a class="text-uppercase no-underline small" href="#">Explore more products >></a>
+                      <a class="text-uppercase no-underline small" href="products">Explore more products >></a>
                     </span>
       						</div>
                   <div class="col-md-5 col-sm-12">
@@ -237,7 +237,7 @@
                     <span class="menu-header text-uppercase">Resources</span>
                     <ul class="pt-3">
                       <li class="menu-list">
-                        <a  class="no-underline text-black menu-link-header" href="#">Blog</a>
+                        <a  class="no-underline text-black menu-link-header" href="/blog">Blog</a>
                       </li>
                       <li class="menu-list">
                         <a  class="no-underline text-black menu-link-header" href="#">Webinars</a>

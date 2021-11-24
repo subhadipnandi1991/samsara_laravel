@@ -14,6 +14,10 @@
     {{ View::make('footer') }}
   </body>
   <style>
+  .pagination-link a.active{
+    font-weight: bold;
+  }
+
   .author-info {
     margin-top: -50px;
   }
@@ -89,6 +93,10 @@
 
   .text-blue {
     color: rgba(3,132,251,1);
+  }
+
+  .justify-center {
+    justify-content: center;
   }
 
   .small {
@@ -322,7 +330,7 @@
 
           $('.category-list').append(
             '<li class="custom-list">\
-              <a class="custom-anchor no-underline text-black category-list-item" href="#" value="0">View All</a>\
+              <a class="custom-anchor no-underline text-black category-list-item active" href="#" value="0">View All</a>\
             </li>');
           $.each(response.allCategories, function(key, item) {
             $('.category-list').append(
@@ -366,19 +374,20 @@
               </div>');
           });
           if (response.allBlogs.links.length > 3) {
+            // console.log(response.allBlogs.links);
             // $('.blog-area').append('<div class="justify-center text-center mb-4 flex w-full">\
             //   <div class="pagination flex">\
             //   <div class="flex">');
-            $.each(response.allBlogs.links, function(key,item) {
-              $('.blog-area').append(
-                '<div class="cursor-pointer mx-1">\
-                  <a href="'+ item.url +'">'+ item.label +'</a>\
-                </div>');
+            $.each(response.allBlogs.links, function(key,item) {        // pagination-link class is selected to change the effects of these links , Make sure this class is not deleted
+              if(item.url != null) {
+                console.log(item.active);
+                $('.blog-area').append(
+                  '<div class="pagination-link cursor-pointer mx-1">\
+                    <a class="no-underline text-black" href="'+ item.url +'">'+ item.label +'</a>\
+                  </div>');
+              }
             });
-            // $('.blog-area').append('</div>\
-            //   </div>\
-            //   </div>');
-
+            $('.pagination-link').wrapAll('<div class="justify-center mb-4 d-flex w-100"></div>');
           }
         }
       });
@@ -389,8 +398,8 @@
         blogsByCat_counter = 1;
         allBlogs_counter = 0;
       }
-      console.log("blogsByCat_counter = " + blogsByCat_counter);
-      console.log("allBlogs_counter = " + allBlogs_counter);
+      // console.log("blogsByCat_counter = " + blogsByCat_counter);
+      // console.log("allBlogs_counter = " + allBlogs_counter);
       $.ajax({
         url: '/fetch-blogs-by-category/'+ id + '?page=' + p_no,
         type: 'get',
@@ -426,11 +435,15 @@
           if (response.blogsByCategory.links.length > 3) {
             // console.log(response.blogsByCategory.links.length);
             $.each(response.blogsByCategory.links, function(key, item) {
-              $('.blog-area').append(
-                '<div class="pagination cursor-pointer mx-1">\
-                  <a href="'+ item.url +'">'+ item.label +'</a>\
-                </div>');
+              // if (item.links != null) {
+                $('.blog-area').append(
+                  '<div class="pagination-link cursor-pointer mx-1">\
+                    <a class="no-underline text-black" href="'+ item.url +'">'+ item.label +'</a>\
+                  </div>');
+              // }
             });
+
+            $('.pagination-link').wrapAll('<div class="justify-center mb-4 d-flex w-100"></div>');
           }
         }
       });
@@ -439,7 +452,7 @@
     fetchAllCategories(); // load all categories in blog page at loading
     fetchAllBlogs(1);      // load first page of blogs at loading
 
-    $(document).on('click', '.pagination a', function(event) {  // This function is for pressing the pagination buttons
+    $(document).on('click', '.pagination-link a', function(event) {  // This function is for pressing the pagination buttons
                                                                 // and going to the particular page
       event.preventDefault();                                   // it prevents the default function of a tags
       // console.log(this);
@@ -459,6 +472,15 @@
         fetchBlogsByCategory(c_no,p_no);
       }
 
+    });
+
+    $(document).load('.blog-category-list', function(){
+      $('li.custom-list a').on('click', function () {     // this is where the products category active effect is happening afetr clicking
+        $('li.custom-list a').each(function () {
+            $(this).removeClass('active');
+        })
+        $(this).addClass('active');
+      });
     });
 
 
@@ -506,7 +528,8 @@
 
     });
 
-    $('li.custom-list a').on('click', function () {
+    $('li.custom-list a').on('click', function () {     // this is where the products category active effect is happening afetr clicking
+      console.log(this);
       $('li.custom-list a').each(function () {
           $(this).removeClass('active');
       })
