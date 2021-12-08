@@ -3,7 +3,7 @@
 @section('content')
 
 <div class="lg-container home-content">
-  <div class="flex -mx-gap flex-wrap pt-4 pb-4">
+  <div class="pt-4 pb-4">
     <div class="header-text text-center">
       <h1 class="text-white">The Connected Operations Cloud</h1>
       <button type="button" class="btn btn-primary mx-3">

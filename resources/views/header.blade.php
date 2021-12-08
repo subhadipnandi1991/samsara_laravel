@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light">
   <div class="row w-100">
     <div class="col-md-3">
       <a class="navbar-brand" href="/">Navbar</a>
@@ -7,7 +7,7 @@
       </button>
     </div>
     <div class="col-md-6">
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="collapse navbar-collapse justify-center" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item has-megamenu">
             <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Products</a>

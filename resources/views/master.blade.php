@@ -14,6 +14,15 @@
     {{ View::make('footer') }}
   </body>
   <style>
+  #safety-content li {
+    font-size: 13px;
+    max-width: 180px;
+  }
+
+  #safety-content li img {
+    max-width: 65px;
+  }
+
   .pagination-link a.active{
     font-weight: bold;
   }
@@ -435,12 +444,12 @@
           if (response.blogsByCategory.links.length > 3) {
             // console.log(response.blogsByCategory.links.length);
             $.each(response.blogsByCategory.links, function(key, item) {
-              // if (item.links != null) {
+              if (item.url != null) {
                 $('.blog-area').append(
                   '<div class="pagination-link cursor-pointer mx-1">\
                     <a class="no-underline text-black" href="'+ item.url +'">'+ item.label +'</a>\
                   </div>');
-              // }
+              }
             });
 
             $('.pagination-link').wrapAll('<div class="justify-center mb-4 d-flex w-100"></div>');
