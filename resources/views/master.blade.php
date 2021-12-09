@@ -9,17 +9,23 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
   <body>
-    {{ View::make('header') }}
+    {{ View::make('header') }}6
     @yield('content')
     {{ View::make('footer') }}
   </body>
   <style>
+  #hdvideo span {
+    font-size: 16px;
+  }
+
   #safety-content li {
     font-size: 13px;
     max-width: 180px;
   }
 
-  #safety-content li img {
+  #safety-content li img,
+  #hdvideo img,
+  img.small-image {
     max-width: 65px;
   }
 
@@ -51,6 +57,10 @@
 
   .no-left-pad {
     padding-left: 0 !important;
+  }
+
+  .font-bold {
+    font-weight: bold;
   }
 
   .left-pad {
