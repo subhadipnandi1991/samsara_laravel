@@ -77,7 +77,7 @@
   </div>
 </div>
 
-<div class="px-3 pt-5 row">
+<div class="px-3 py-5 row">
   <div class="video col-md-6">
     <video playsinline="" autoplay="autoplay" muted="muted" preload="auto" loop="loop" class="" style="max-width:727px;">
       <source src="//videos.ctfassets.net/bx9krvy0u3sx/13PmDpcF9ftoDyKwEH5i2V/cc65a35cf7a49643be6347f306c90f4f/vp2-us-uk.mp4">
@@ -90,10 +90,173 @@
     <span class="font-bold text-primary text-uppercase">In-cab driver assistance</span>
     <h2>Prevent incidents before they happen with in-cab alerts</h2>
     <p>Coach your drivers on the road with a range of in-cab audio alerts, including tailgating, speeding, no seatbelt, and more, to help drivers improve safe habits. Optimize the driver experience by customizing in-cab alerts right from your dashboard.</p>
-    <a class="font-bold text-primary no-underline" href="#">Preventive alerts ></a>
+    <a class="font-bold text-primary no-underline d-block pb-4" href="#">Preventive alerts ></a>
     <hr>
     <h6 class="text-uppercase font-bold">83% reduction in at-fault incidents</h6>
+    <img src="//images.ctfassets.net/bx9krvy0u3sx/B6ZhZoId8xLduBTc0nA0F/ac687276ec618f09f5765283c82f7da3/markstein-logo-260.jpg?q=80" alt="" style="max-width:260px;">
+  </div>
+</div>
 
+<div id="coachingworkflows">
+  <div class="px-3 py-5 row">
+    <div class="col-md-1"></div>
+    <div class="col-md-4 px-5">
+      <img class="small-image" src="//images.ctfassets.net/bx9krvy0u3sx/4D9VZkxkF3c3nOZVnOLyFb/60453a1f27fc256d1bfd5b53e1a20b6b/coaching.svg?q=80" alt="">
+      <span class="font-bold text-primary text-uppercase">Coaching Workflows</span>
+      <h2>Coach drivers at scale with easy-to-use workflows</h2>
+      <p>Coach your drivers at the office with detailed robust coaching tools that ensure timeliness, effectiveness, and accountability. Incentivize safe driving using driver-centric gamification and create rewards programs to build trust with drivers.</p>
+      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Manager-led coaching ></a>
+      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Driver gamification ></a>
+      <hr>
+      <h6 class="text-uppercase font-bold">13% reduction in preventable accidents</h6>
+      <img src="//images.ctfassets.net/bx9krvy0u3sx/1WsoRJ6WGDgk753bsWrjWZ/8c7e9f66cc5e174643d0fd5d81d54fea/arcbest-logo-260.jpg?q=80" alt="" style="max-width:260px;">
+    </div>
+    <div class="col-md-1"></div>
+    <div class="video col-md-6">
+      <img src="//images.ctfassets.net/bx9krvy0u3sx/1PamvfTpVudAvGKQijLfpx/0df2de10ff7faa8d294266eedc9f8d8f/coachingreport-us.jpg?q=80&w=1440" alt="coaching-workflows" style="max-width: 719px;">
+    </div>
+  </div>
+</div>
+
+<div id="reportingninsights">
+  <div class="px-3 py-5 row">
+    <div class="col-md-2"></div>
+    <div class="video col-md-5">
+      <img src="//images.ctfassets.net/bx9krvy0u3sx/6b5tIM1RaExWqBE2EBR99b/50cc017f81d1fd84f12712727ecc7050/safetyscorecard-us.jpg?q=80&w=507" alt="coaching-workflows" style=" ">
+    </div>
+    <div class="col-md-4 px-5">
+      <img class="small-image" src="//images.ctfassets.net/bx9krvy0u3sx/6rNhFN9QANXNzYq1uD3WHX/302ec9e5db7b835c85044b4e80465215/reporting.svg?q=80&h=50" alt="">
+      <span class="font-bold text-primary text-uppercase">Reporting & Insights</span>
+      <h2>Retain drivers and protect your bottom line</h2>
+      <p>With benchmarking tools, safety scorecards, risk reports, and in-depth analytics, Samsara offers powerful real-time insights to help you understand how your fleet is performing compared to the industry, prioritize safety initiatives, protect your bottom line, and attract talent.</p>
+      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Benchmarking Report ></a>
+      <a class="font-bold text-primary no-underline d-block pb-4" href="#">ROI Guide ></a>
+      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Safety Dashboard ></a>
+      <hr>
+      <h6 class="text-uppercase font-bold">10% reduction in driver turnover using safety scores and incentive programs</h6>
+      <img src="//images.ctfassets.net/bx9krvy0u3sx/3MJApMdnShn8MeiTWCQnFO/a0f026fb43b686c618eda918a974bee3/dohrn_b_2x.jpg?q=80&h=120" alt="" style="max-width:260px;">
+    </div>
+
+    <div class="col-md-1"></div>
+  </div>
+</div>
+
+<section class="bg-blue-dark mt-5">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 col-sm-12 py-5">
+        <h5 class="text-uppercase text-primary">Video</h5>
+        <h2 class="text-white">See how customers have transformed their safety programs using Samsara</h2>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <img class="w-100 right-0 top-0 position-relative" src="//images.ctfassets.net/bx9krvy0u3sx/2wUQYK7Z2Vb3RC0fSX6mSv/3d124a8f1bbdc992fd2b22ba55357011/videocell.jpg?fm=webp&q=80" alt="">
+    </div>
+  </div>
+  <div class="absolute w-50">
+    <div class="image__play absolute cursor-pointer z-10">
+      <svg width="133" height="133" viewBox="0 0 133 133" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="66.5" cy="66.5" r="66.5" fill="white" fill-opacity="0.8"></circle>
+        <path d="M91 68L52.75 90.5167L52.75 45.4833L91 68Z" fill="#00263E"></path>
+      </svg>
+    </div>
+  </div>
+  <div class="modal d-none">
+    modal to make
+  </div>
+</section>
+
+
+<div class="bg-blue-lighter pt-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 text-center">
+        <h6 class="text-uppercase text-primary">How it works</h6>
+        <h2>An end-to-end culture of safety</h2>
+        <p>Samsara offers top-tier support and implementation services to ensure a smooth and successful transition to a video-based safety program.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3 p-4">
+        <img class="w-100" src="//images.ctfassets.net/bx9krvy0u3sx/4fQRQBfT1om7M3AEyFpfkQ/e966d3681da36f9e3c68602fed4f0bd1/howitworks-01-us.jpg?q=80" alt="first">
+        <h2>01</h2>
+        <p class="">
+          <strong>Program Design:</strong> We help you identify goals and design an implementation plan with key milestones.
+        </p>
+      </div>
+      <div class="col-md-3 p-4">
+        <img class="w-100" src="//images.ctfassets.net/bx9krvy0u3sx/1bkJ2CBSTKe6mxqPHIYzfx/6fb69c8892715433c888525c2f3c3faa/howitworks-02-us.jpg?q=80" alt="second">
+        <h2>02</h2>
+        <p>
+          <strong>Installation:</strong> Install Samsara yourself or work with our partners. Customize settings to your needs.
+        </p>
+      </div>
+      <div class="col-md-3 p-4">
+        <img class="w-100" src="//images.ctfassets.net/bx9krvy0u3sx/4l6ZlinsspMqBIyTWNmXvU/72acea4aa06db39379e0fdd151eff892/howitworks-03-us.jpg?q=80" alt="third">
+        <h2>03</h2>
+        <p>
+          <strong>Training:</strong> Empower your team to communicate and launch your new safety program to employees.
+        </p>
+      </div>
+      <div class="col-md-3 p-4">
+        <img class="w-100" src="//images.ctfassets.net/bx9krvy0u3sx/5f26f1ncgt9U0nUgJqUZYv/d02c1c97bbcc7cfa4a02c25a48261f94/howitworks-04-us.jpg?q=80" alt="fourth">
+        <h2>04</h2>
+        <p>
+          <strong>Program Refinement:</strong> We work with you even after your program launches to ensure smooth ongoing operations.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="bg-blue-lighter">
+  <div class="w-100 container z-10">
+    <div class="d-flex pb-5 justify-center">
+      <a class="btn btn-primary text-uppercase p-3 small" href="#">Download Guide</a>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="row text-center py-5">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <h2>Flexible deployment options</h2>
+      <p>By managing your safety program on The Connected Operations Platform, everyone from drivers to safety managers operates on the same real-time data.</p>
+    </div>
+  </div>
+</div>
+<div class="bg-blue-lighter">
+  <div class="w-100 container z-10">
+    <div class="py-5 justify-center">
+      <h3 class="d-block text-center py-5">Trusted by customers across industries</h3>
+      <p class="d-block px-5 text-center">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/6pKvyorgpuCPJBGVTR4Iai/ed25b76773ef9dcbf5277971e4217a9f/dohrn.jpg?q=80&w=170&h=80" alt="">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/adnpkdPNz95hT7ajcDF6E/6f161d40c212b81d6d5feb772418c5b7/abf.jpg?q=80&h=80" alt="">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/NyLTGAcAFAww6jhohT8KO/ac89d0e92c448efb648a4e7051598401/CWD.cwd.jpg?q=80&h=80" alt="">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/5tyhA9Z7B9Dj2WAChBoU5I/1c7968d2a348db3c1eb5f884b0e58cdb/ksi.jpg?q=80&h=80" alt="">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/1XEoFC2kSj9K63KgWQYGmA/826050fe594fb3f8d58cfcc0bb6a2817/summit.jpg?q=80&h=77" alt="">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/4LMhv745xf7bQACFbOrzyd/601f18768677903843522634f7448020/lowervalley.jpg?q=80&h=80" alt="">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/56rt6ujF9tqDzkcwvQ0dHt/0231d99ddffcf0c9cb212776f4f9ff21/cruzroja.jpg?q=80&h=80" alt="">
+        <img src="//images.ctfassets.net/bx9krvy0u3sx/4OJrmtenHyFPflGr8CCMlc/0e50ffdc8ddcbead2caedfde3e51dad7/kehe.jpg?q=80&h=80" alt="">
+      </p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6 px-0">
+    <div style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/4QsNhqiOdXozucLWuZAt7W/4b899ac6b8fd67bfff715b500dc153f0/original_1.jpg"); background-repeat: no-repeat; background-size:cover;'>
+      <div class="p-5">
+        <h2 class="mx-5">Stay on the cutting edge of fleet safety</h2>
+        <a class="btn btn-primary text-uppercase p-3 small mx-5" href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 px-0">
+    <div style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/7nWu1i9QFaz5Bu8UfXIUn1/fc22af8a77bc528a5c90409f67808acc/1905_Samsara_Dohrn_4378_1.png"); background-repeat: no-repeat;  background-size:cover;'>
+      <div class="p-5">
+        <h2 class="mx-5">8 actionable tips for improving fleet safety</h2>
+        <a class="btn btn-primary text-uppercase p-3 small mx-5" href="#">Learn More</a>
+      </div>
+    </div>
   </div>
 </div>
 

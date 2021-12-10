@@ -14,6 +14,12 @@
     {{ View::make('footer') }}
   </body>
   <style>
+  .image__play[data-v-08f55912] {
+    left: -66.5px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+}
   #hdvideo span {
     font-size: 16px;
   }

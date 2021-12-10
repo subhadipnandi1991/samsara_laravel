@@ -394,8 +394,6 @@
       </div>
     </div>
   </div>
-
-
 </nav>
 
 <nav id="secondary-menu" class="navbar navbar-expand-lg navbar-light bg-light d-none">
@@ -406,15 +404,11 @@
         <span class="navbar-toggler-icon"></span>
       </button>
     </div>
-    <div class="col-md-6">
-
-    </div>
+    <div class="col-md-6"></div>
     <div class="col-md-3">
       <div class="my-link px-5">
         <button type="button" class="btn btn-primary small px-4 py-3 mx-3">CHECK OUR PRICES</button>
       </div>
     </div>
-
   </div>
-
 </nav>
