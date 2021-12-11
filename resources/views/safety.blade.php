@@ -208,6 +208,7 @@
     </div>
   </div>
 </div>
+
 <div class="bg-blue-lighter">
   <div class="w-100 container z-10">
     <div class="d-flex pb-5 justify-center">
@@ -223,6 +224,63 @@
       <p>By managing your safety program on The Connected Operations Platform, everyone from drivers to safety managers operates on the same real-time data.</p>
     </div>
   </div>
+</div>
+<div class="container p-5">
+  <ul class="d-flex justify-center mb-4">
+    <li class="text-uppercase no-bullet-list p-3 font-bold">AI Dash Cams</li>
+    <li class="text-uppercase no-bullet-list p-3 font-bold">Site Visibility</li>
+  </ul>
+  <div class="row" id="aidashcams">
+    <div class="col-md-6">
+      <img src="//images.ctfassets.net/bx9krvy0u3sx/5Fjxb873gsWcRDh57fYpqq/ef1fec9b6c99a7ec4fac809678d5578f/deployment-options-01-us.jpg?fm=webp&q=80" alt="" class="w-100">
+      <div class="text-center mt-5 d-block">
+        <a href="#" class="btn btn-primary p-3">More Details</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mx-5">
+        <h6 class="text-uppercase">High-Definition video Footage</h6>
+        <p>Full HD video with Infrared LED for night vision and high enough clarity to capture the smallest details.</p>
+        <hr>
+        <h6 class="text-uppercase">REAL-TIME DRIVER coaching</h6>
+        <p>Built-in audio speaker supports optional in-cab driver alerts.</p>
+        <hr>
+        <h6 class="text-uppercase">AI-OPTIMIZED PROCESSOR</h6>
+        <p>Advanced edge computing allows for live scene analysis and object detection.</p>
+        <hr>
+        <h6 class="text-uppercase">ONBOARD STORAGE</h6>
+        <p>On-demand video available for up to 100 hours of drive time.</p>
+        <hr>
+        <h6 class="text-uppercase">EASY TO INSTALL for immediate results</h6>
+        <p>Installs in < 15 minutes with simple mounting and activation. </p>
+      </div>
+    </div>
+  </div>
+  <div class="row" id="sitevisibility">
+    <div class="col-md-6">
+      <img src="//images.ctfassets.net/bx9krvy0u3sx/3fLSXkVQx9AuO6ZrxrF9CC/9494af4f99598cadf15e9512f3789f62/deployment-options-02-us.jpg?q=80" alt="" class="w-100">
+      <div class="text-center mt-5 d-block">
+        <a href="#" class="btn btn-primary p-3">More Details</a>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="mx-5">
+        <h6 class="text-uppercase">HYBRID CLOUD ARCHItecture</h6>
+        <p>A powerful, on-premise gateway and 5MP cloud-connected security cameras offer granular visibility into onsite activities.</p>
+        <hr>
+        <h6 class="text-uppercase">remote and on-the-go visibility</h6>
+        <p>View camera streams from anywhere, in real-time using the the cloud-based dashboard or the mobile application.</p>
+        <hr>
+        <h6 class="text-uppercase">streamline incident investigation</h6>
+        <p>Spend less time investigating safety incidents using AI-driven search tools. Quickly uncover and share important footage.</p>
+        <hr>
+        <h6 class="text-uppercase">catch incidents in the moment</h6>
+        <p>Be immediately notifed of unusual or unsafe activity through intelligent detections and proactive, customizable alerts.</p>
+
+      </div>
+    </div>
+  </div>
+
 </div>
 <div class="bg-blue-lighter">
   <div class="w-100 container z-10">
@@ -242,22 +300,79 @@
   </div>
 </div>
 <div class="row">
-  <div class="col-md-6 px-0">
-    <div style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/4QsNhqiOdXozucLWuZAt7W/4b899ac6b8fd67bfff715b500dc153f0/original_1.jpg"); background-repeat: no-repeat; background-size:cover;'>
-      <div class="p-5">
-        <h2 class="mx-5">Stay on the cutting edge of fleet safety</h2>
-        <a class="btn btn-primary text-uppercase p-3 small mx-5" href="#">Learn More</a>
+  <div class="col-md-6 px-0" style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/4QsNhqiOdXozucLWuZAt7W/4b899ac6b8fd67bfff715b500dc153f0/original_1.jpg"); background-repeat: no-repeat; background-size:cover; height:767px;'>
+    <div class="gradient-bg">
+      <div class="p-5 mx-5">
+        <span class="font-bold text-white text-uppercase">Webinar</span>
+        <h2 class="text-white">Stay on the cutting edge of fleet safety</h2>
+        <a class="btn btn-primary text-uppercase p-3 small" href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-6 px-0" style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/7nWu1i9QFaz5Bu8UfXIUn1/fc22af8a77bc528a5c90409f67808acc/1905_Samsara_Dohrn_4378_1.png"); background-repeat: no-repeat;  background-size:cover;'>
+    <div class="gradient-bg">
+      <div class="p-5 mx-5">
+        <span class="font-bold text-white text-uppercase">Guide</span>
+        <h2 class="text-white">8 actionable tips for improving fleet safety</h2>
+        <a class="btn btn-primary text-uppercase p-3 small" href="#">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-1"></div>
+  <div class="col-md-5 py-5">
+    <h2 class="p-4">One platform for all of your operations</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <a href="#" class="no-underline p-3 d-block">
+          <span>
+            <img src="//images.ctfassets.net/bx9krvy0u3sx/1p2syaiXJxCTatgufQfmhG/0f9fb2c14a6e9f14e2cae1339b89a95d/Group_1377.svg" alt="" class="icon-img d-inline">
+            <h6 class="d-inline font-bold text-dark">Platform Overview</h6>
+          </span>
+        </a>
+        <a href="#" class="no-underline p-3 d-block">
+          <span>
+            <img src="//images.ctfassets.net/bx9krvy0u3sx/5TAcAG742tMOQTomQ3hX2e/6cc81f4715ee8bc6b041e48fff869e53/App_and_Driver_Workflows_Icon.svg" alt="" class="icon-img d-inline">
+            <h6 class="d-inline font-bold text-dark">Apps & Driver Workflows</h6>
+          </span>
+        </a>
+        <a href="#" class="no-underline p-3 d-block">
+          <span>
+            <img src="//images.ctfassets.net/bx9krvy0u3sx/3TvftCAL6D4rZgUzxSiyOA/f533b57196aa14d55b332d66da1e6241/Dashcam.svg" alt="" class="icon-img d-inline">
+            <h6 class="d-inline font-bold text-dark">Video-Based Safety</h6>
+          </span>
+        </a>
+      </div>
+      <div class="col-md-6">
+        <a href="#" class="no-underline p-3 d-block">
+          <span>
+            <img src="//images.ctfassets.net/bx9krvy0u3sx/4LdtfZBWWy7PX29wA0g2x5/abbe950188cdb7575fb89ad2bf326c80/OEM-telematics-icon.svg" alt="" class="icon-img d-inline">
+            <h6 class="d-inline font-bold text-dark">Vehicle Telematics</h6>
+          </span>
+        </a>
+        <a href="#" class="no-underline p-3 d-block">
+          <span>
+            <img src="//images.ctfassets.net/bx9krvy0u3sx/1vnerWyiPhcxM6i2UG54Cg/69808aad7f097fa703f214f990d1ac4b/Remote-Monitoring-Icon.svg" alt="" class="icon-img d-inline">
+            <h6 class="d-inline font-bold text-dark">Equipment Monitoring</h6>
+          </span>
+        </a>
+        <a href="#" class="no-underline p-3 d-block">
+          <span>
+            <img src="//images.ctfassets.net/bx9krvy0u3sx/3xZya4wrm4MTFUFoOA3Ma8/2f9128707798aaf47b4201add60ce70b/Site_Visibility.svg" alt="" class="icon-img d-inline">
+            <h6 class="d-inline font-bold text-dark">Site Visibility</h6>
+          </span>
+        </a>
       </div>
     </div>
   </div>
   <div class="col-md-6 px-0">
-    <div style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/7nWu1i9QFaz5Bu8UfXIUn1/fc22af8a77bc528a5c90409f67808acc/1905_Samsara_Dohrn_4378_1.png"); background-repeat: no-repeat;  background-size:cover;'>
-      <div class="p-5">
-        <h2 class="mx-5">8 actionable tips for improving fleet safety</h2>
-        <a class="btn btn-primary text-uppercase p-3 small mx-5" href="#">Learn More</a>
-      </div>
-    </div>
+    <video playsinline="" autoplay="autoplay" muted="muted" preload="auto" loop="loop" class="lazyLoad isLoaded w-100" >
+      <source src="//videos.ctfassets.net/bx9krvy0u3sx/xLm8VdN72led4uixOiKkF/77f75e8b216e20ad74d912f300b337ee/Samsara_Animation_v1_US_-_condensed_sm.mp4">
+      <track kind="captions">
+    </video>
   </div>
+
 </div>
 
 @endsection

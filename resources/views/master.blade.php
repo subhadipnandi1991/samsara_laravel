@@ -9,17 +9,28 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </head>
   <body>
-    {{ View::make('header') }}6
+    {{ View::make('header') }}
     @yield('content')
     {{ View::make('footer') }}
   </body>
   <style>
+  .icon-img {
+    height: 40px;
+    width: 40px;
+  }
+
+  .gradient-bg {
+    height: 767px;
+    background-image: linear-gradient(transparent, black);
+  }
+
   .image__play[data-v-08f55912] {
     left: -66.5px;
     top: 50%;
     bottom: auto;
     transform: translateY(-50%);
-}
+  }
+
   #hdvideo span {
     font-size: 16px;
   }
