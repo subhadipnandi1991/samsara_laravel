@@ -226,11 +226,11 @@
   </div>
 </div>
 <div class="container p-5">
-  <ul class="d-flex justify-center mb-4">
-    <li class="text-uppercase no-bullet-list p-3 font-bold">AI Dash Cams</li>
-    <li class="text-uppercase no-bullet-list p-3 font-bold">Site Visibility</li>
+  <ul class="d-flex justify-center mb-4" id="tabContents">
+    <li id="aidashcams" class="text-uppercase no-bullet-list p-3 font-bold">AI Dash Cams</li>
+    <li id="sitevisibility" class="text-uppercase no-bullet-list p-3 font-bold">Site Visibility</li>
   </ul>
-  <div class="row" id="aidashcams">
+  <div class="row pt-4 tabbedDiv" id="aidashcams">
     <div class="col-md-6">
       <img src="//images.ctfassets.net/bx9krvy0u3sx/5Fjxb873gsWcRDh57fYpqq/ef1fec9b6c99a7ec4fac809678d5578f/deployment-options-01-us.jpg?fm=webp&q=80" alt="" class="w-100">
       <div class="text-center mt-5 d-block">
@@ -256,7 +256,7 @@
       </div>
     </div>
   </div>
-  <div class="row" id="sitevisibility">
+  <div class="row pt-4 tabbedDiv" id="sitevisibility">
     <div class="col-md-6">
       <img src="//images.ctfassets.net/bx9krvy0u3sx/3fLSXkVQx9AuO6ZrxrF9CC/9494af4f99598cadf15e9512f3789f62/deployment-options-02-us.jpg?q=80" alt="" class="w-100">
       <div class="text-center mt-5 d-block">
