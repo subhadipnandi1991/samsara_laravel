@@ -1,11 +1,21 @@
 @extends('master')
 
 @section('content')
-<div class="container">
-  <div class="header-text my-5 p-5">
-    <h1 class="fs-48">Video-Based Safety</h1>
+<div class="hero--video">
+  <div class="video">
+    <video playsinline="" autoplay="autoplay" muted="muted" preload="auto" loop="loop" class="lazyLoad isLoaded">
+      <source src="//videos.ctfassets.net/bx9krvy0u3sx/5BPby7Uh6b5IKDS8QOZIP2/f7ac04c507644253b9053874dfca5da3/Video-Based_Safety_US-UK.mp4" data-v-e7c51746="">
+        <track kind="captions">
+    </video>
   </div>
+  <div class="container" style="margin-top: -400px; position: absolute;">
+    <div class="header-text my-5 p-5" style="width: 450px;margin-left: 150px;">
+      <h1 class="fs-48">Video-Based Safety</h1>
+    </div>
+  </div>
+</div>
 
+<div class="container">
   <div class="w-100">
     <div class="d-flex pt-1 pb-4">
       <div class="w-100 text-center">
@@ -142,26 +152,25 @@
 </div>
 
 <section class="bg-blue-dark mt-5">
-  <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-4 col-sm-12 py-5">
-        <h5 class="text-uppercase text-primary">Video</h5>
-        <h2 class="text-white">See how customers have transformed their safety programs using Samsara</h2>
-    </div>
-    <div class="col-md-6 col-sm-12">
-      <img class="w-100 right-0 top-0 position-relative" src="//images.ctfassets.net/bx9krvy0u3sx/2wUQYK7Z2Vb3RC0fSX6mSv/3d124a8f1bbdc992fd2b22ba55357011/videocell.jpg?fm=webp&q=80" alt="">
-    </div>
-  </div>
-  <div class="absolute w-50">
-    <div class="image__play absolute cursor-pointer z-10">
+  <div class="position-absolute w-100" style="z-index: 1;">
+    <div class="image__play d-flex justify-center
+     cursor-pointer z-10">
       <svg width="133" height="133" viewBox="0 0 133 133" fill="none" xmlns="http://www.w3.org/2000/svg">
         <circle cx="66.5" cy="66.5" r="66.5" fill="white" fill-opacity="0.8"></circle>
         <path d="M91 68L52.75 90.5167L52.75 45.4833L91 68Z" fill="#00263E"></path>
       </svg>
     </div>
   </div>
-  <div class="modal d-none">
-    modal to make
+
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-4 col-sm-12 py-5 my-5">
+        <h5 class="text-uppercase text-primary">Video</h5>
+        <h2 class="text-white">See how customers have transformed their safety programs using Samsara</h2>
+    </div>
+    <div class="col-md-6 col-sm-12">
+      <img class="w-100 right-0 top-0 position-relative" src="//images.ctfassets.net/bx9krvy0u3sx/2wUQYK7Z2Vb3RC0fSX6mSv/3d124a8f1bbdc992fd2b22ba55357011/videocell.jpg?fm=webp&q=80" alt="">
+    </div>
   </div>
 </section>
 

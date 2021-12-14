@@ -12,11 +12,13 @@ ul#tabContents > li {
   background-image: linear-gradient(transparent, black);
 }
 
-.image__play[data-v-08f55912] {
+.image__play {
   left: -66.5px;
   top: 50%;
   bottom: auto;
   transform: translateY(-50%);
+  z-index: 1;
+  margin-top: 250px;
 }
 
 #hdvideo span {
