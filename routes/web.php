@@ -33,6 +33,7 @@ Route::view('/', 'homepage');
 
 Route::get('/products/', [ProductController::class, 'productDetails']);
 Route::view('/products/safety', 'safety');
+Route::view('/company/contact', 'contact');
 Route::get('/blog/', [BlogController::class, 'blogDetails']);
 Route::get('/blog/{id}', [BlogController::class, 'blogPage'])->name('blogDetails');
 Route::get('/fetch-all-blogs-n-categories', [BlogController::class, 'fetchAllBlogsAndCategories']);
