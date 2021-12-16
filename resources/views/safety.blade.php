@@ -27,28 +27,28 @@
       <ul id="safety-content" class="no-bullet-list d-flex">
         <li class="text-center">
           <img src="//images.ctfassets.net/bx9krvy0u3sx/2NT1bMl8ZZosrZp013emu8/554acc4fe63521bfeca437a7527d56d0/hdvideo.svg?q=80" alt="">
-          <span class="text-uppercase d-block font-bold">HD Video Visibility</span>
+          <span class="text-uppercase d-block fw-bold">HD Video Visibility</span>
         </li>
         <li class="text-center px-5 m-auto">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-91c3a7b0=""><path d="M10 0V22" stroke="#0384FB" stroke-width="2" data-v-91c3a7b0=""></path> <path d="M21 11L8.34465e-07 11" stroke="#0384FB" stroke-width="2" data-v-91c3a7b0=""></path></svg>
         </li>
         <li class="text-center">
           <img src="//images.ctfassets.net/bx9krvy0u3sx/11bdB3LX7yHD9DBZdsenqS/fd0099657f183bc82d7ed4fc697c1736/in-cab-alert.svg?q=80" alt="">
-          <span class="text-uppercase d-block font-bold">In-cab driver assistance</span>
+          <span class="text-uppercase d-block fw-bold">In-cab driver assistance</span>
         </li>
         <li class="text-center px-5 m-auto">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-91c3a7b0=""><path d="M10 0V22" stroke="#0384FB" stroke-width="2" data-v-91c3a7b0=""></path> <path d="M21 11L8.34465e-07 11" stroke="#0384FB" stroke-width="2" data-v-91c3a7b0=""></path></svg>
         </li>
         <li class="text-center">
           <img src="//images.ctfassets.net/bx9krvy0u3sx/4D9VZkxkF3c3nOZVnOLyFb/60453a1f27fc256d1bfd5b53e1a20b6b/coaching.svg?q=80" alt="">
-          <span class="text-uppercase d-block font-bold">Coaching Workflows</span>
+          <span class="text-uppercase d-block fw-bold">Coaching Workflows</span>
         </li>
         <li class="text-center px-5 m-auto">
           <svg width="21" height="22" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg" data-v-91c3a7b0=""><path d="M10 0V22" stroke="#0384FB" stroke-width="2" data-v-91c3a7b0=""></path> <path d="M21 11L8.34465e-07 11" stroke="#0384FB" stroke-width="2" data-v-91c3a7b0=""></path></svg>
         </li>
         <li class="text-center">
           <img src="//images.ctfassets.net/bx9krvy0u3sx/6rNhFN9QANXNzYq1uD3WHX/302ec9e5db7b835c85044b4e80465215/reporting.svg?q=80&h=50" alt="">
-          <span class="text-uppercase d-block font-bold">Reporting & Insights</span>
+          <span class="text-uppercase d-block fw-bold">Reporting & Insights</span>
         </li>
       </ul>
     </div>
@@ -69,17 +69,17 @@
         <div class="col-md-2"></div>
         <div class="col-md-8">
           <img src="//images.ctfassets.net/bx9krvy0u3sx/2NT1bMl8ZZosrZp013emu8/554acc4fe63521bfeca437a7527d56d0/hdvideo.svg?q=80" alt="">
-          <span class="font-bold text-primary">HD VIDEO VISIBILITY</span>
+          <span class="fw-bold text-primary">HD VIDEO VISIBILITY</span>
           <h2>Detect and capture risk</h2>
           <p>
             Using industry-leading AI Dash Cams, Samsara automatically captures high-definition video and sends footage of important incidents to the cloud for review within minutes. We give you real-time visibility to protect your drivers and business in the moments that matter.
           </p>
-          <a class="no-underline font-bold d-block pb-4" href="#">AI Dash Cams ></a>
-          <a class="no-underline font-bold d-block pb-4" href="#">Camera Connector ></a>
+          <a class="no-underline fw-bold d-block pb-4" href="#">AI Dash Cams ></a>
+          <a class="no-underline fw-bold d-block pb-4" href="#">Camera Connector ></a>
           <hr class="mb-4">
           <h5 class="pb-5">
             <img src="//images.ctfassets.net/bx9krvy0u3sx/7a1ohu1okIdk8PWQbWtS9Q/7323cf8b3c616c190000b16455f1b911/sprintwasteserviceslogovert_1200_USUK.jpg?q=80&w=190" alt="sprint" style="max-width:190px;">
-            <span class="text-uppercase font-bold pb-5">Exonerated drivers in 52% of accidents</span>
+            <span class="text-uppercase fw-bold pb-5">Exonerated drivers in 52% of accidents</span>
           </h5>
         </div>
       </div>
@@ -97,12 +97,12 @@
   <div class="col-md-1"></div>
   <div class="col-md-4 px-5">
     <img class="small-image" src="//images.ctfassets.net/bx9krvy0u3sx/11bdB3LX7yHD9DBZdsenqS/fd0099657f183bc82d7ed4fc697c1736/in-cab-alert.svg?q=80" alt="">
-    <span class="font-bold text-primary text-uppercase">In-cab driver assistance</span>
+    <span class="fw-bold text-primary text-uppercase">In-cab driver assistance</span>
     <h2>Prevent incidents before they happen with in-cab alerts</h2>
     <p>Coach your drivers on the road with a range of in-cab audio alerts, including tailgating, speeding, no seatbelt, and more, to help drivers improve safe habits. Optimize the driver experience by customizing in-cab alerts right from your dashboard.</p>
-    <a class="font-bold text-primary no-underline d-block pb-4" href="#">Preventive alerts ></a>
+    <a class="fw-bold text-primary no-underline d-block pb-4" href="#">Preventive alerts ></a>
     <hr>
-    <h6 class="text-uppercase font-bold">83% reduction in at-fault incidents</h6>
+    <h6 class="text-uppercase fw-bold">83% reduction in at-fault incidents</h6>
     <img src="//images.ctfassets.net/bx9krvy0u3sx/B6ZhZoId8xLduBTc0nA0F/ac687276ec618f09f5765283c82f7da3/markstein-logo-260.jpg?q=80" alt="" style="max-width:260px;">
   </div>
 </div>
@@ -112,13 +112,13 @@
     <div class="col-md-1"></div>
     <div class="col-md-4 px-5">
       <img class="small-image" src="//images.ctfassets.net/bx9krvy0u3sx/4D9VZkxkF3c3nOZVnOLyFb/60453a1f27fc256d1bfd5b53e1a20b6b/coaching.svg?q=80" alt="">
-      <span class="font-bold text-primary text-uppercase">Coaching Workflows</span>
+      <span class="fw-bold text-primary text-uppercase">Coaching Workflows</span>
       <h2>Coach drivers at scale with easy-to-use workflows</h2>
       <p>Coach your drivers at the office with detailed robust coaching tools that ensure timeliness, effectiveness, and accountability. Incentivize safe driving using driver-centric gamification and create rewards programs to build trust with drivers.</p>
-      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Manager-led coaching ></a>
-      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Driver gamification ></a>
+      <a class="fw-bold text-primary no-underline d-block pb-4" href="#">Manager-led coaching ></a>
+      <a class="fw-bold text-primary no-underline d-block pb-4" href="#">Driver gamification ></a>
       <hr>
-      <h6 class="text-uppercase font-bold">13% reduction in preventable accidents</h6>
+      <h6 class="text-uppercase fw-bold">13% reduction in preventable accidents</h6>
       <img src="//images.ctfassets.net/bx9krvy0u3sx/1WsoRJ6WGDgk753bsWrjWZ/8c7e9f66cc5e174643d0fd5d81d54fea/arcbest-logo-260.jpg?q=80" alt="" style="max-width:260px;">
     </div>
     <div class="col-md-1"></div>
@@ -136,14 +136,14 @@
     </div>
     <div class="col-md-4 px-5">
       <img class="small-image" src="//images.ctfassets.net/bx9krvy0u3sx/6rNhFN9QANXNzYq1uD3WHX/302ec9e5db7b835c85044b4e80465215/reporting.svg?q=80&h=50" alt="">
-      <span class="font-bold text-primary text-uppercase">Reporting & Insights</span>
+      <span class="fw-bold text-primary text-uppercase">Reporting & Insights</span>
       <h2>Retain drivers and protect your bottom line</h2>
       <p>With benchmarking tools, safety scorecards, risk reports, and in-depth analytics, Samsara offers powerful real-time insights to help you understand how your fleet is performing compared to the industry, prioritize safety initiatives, protect your bottom line, and attract talent.</p>
-      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Benchmarking Report ></a>
-      <a class="font-bold text-primary no-underline d-block pb-4" href="#">ROI Guide ></a>
-      <a class="font-bold text-primary no-underline d-block pb-4" href="#">Safety Dashboard ></a>
+      <a class="fw-bold text-primary no-underline d-block pb-4" href="#">Benchmarking Report ></a>
+      <a class="fw-bold text-primary no-underline d-block pb-4" href="#">ROI Guide ></a>
+      <a class="fw-bold text-primary no-underline d-block pb-4" href="#">Safety Dashboard ></a>
       <hr>
-      <h6 class="text-uppercase font-bold">10% reduction in driver turnover using safety scores and incentive programs</h6>
+      <h6 class="text-uppercase fw-bold">10% reduction in driver turnover using safety scores and incentive programs</h6>
       <img src="//images.ctfassets.net/bx9krvy0u3sx/3MJApMdnShn8MeiTWCQnFO/a0f026fb43b686c618eda918a974bee3/dohrn_b_2x.jpg?q=80&h=120" alt="" style="max-width:260px;">
     </div>
 
@@ -236,8 +236,8 @@
 </div>
 <div class="container p-5">
   <ul class="d-flex justify-center mb-4" id="tabContents">
-    <li id="aidashcams" class="text-uppercase no-bullet-list p-3 font-bold">AI Dash Cams</li>
-    <li id="sitevisibility" class="text-uppercase no-bullet-list p-3 font-bold">Site Visibility</li>
+    <li id="aidashcams" class="text-uppercase no-bullet-list p-3 fw-bold">AI Dash Cams</li>
+    <li id="sitevisibility" class="text-uppercase no-bullet-list p-3 fw-bold">Site Visibility</li>
   </ul>
   <div class="row pt-4 tabbedDiv" id="aidashcams">
     <div class="col-md-6">
@@ -312,7 +312,7 @@
   <div class="col-md-6 px-0" style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/4QsNhqiOdXozucLWuZAt7W/4b899ac6b8fd67bfff715b500dc153f0/original_1.jpg"); background-repeat: no-repeat; background-size:cover; height:767px;'>
     <div class="gradient-bg">
       <div class="p-5 mx-5">
-        <span class="font-bold text-white text-uppercase">Webinar</span>
+        <span class="fw-bold text-white text-uppercase">Webinar</span>
         <h2 class="text-white">Stay on the cutting edge of fleet safety</h2>
         <a class="btn btn-primary text-uppercase p-3 small" href="#">Learn More</a>
       </div>
@@ -321,7 +321,7 @@
   <div class="col-md-6 px-0" style='background-image: url("//images.ctfassets.net/bx9krvy0u3sx/7nWu1i9QFaz5Bu8UfXIUn1/fc22af8a77bc528a5c90409f67808acc/1905_Samsara_Dohrn_4378_1.png"); background-repeat: no-repeat;  background-size:cover;'>
     <div class="gradient-bg">
       <div class="p-5 mx-5">
-        <span class="font-bold text-white text-uppercase">Guide</span>
+        <span class="fw-bold text-white text-uppercase">Guide</span>
         <h2 class="text-white">8 actionable tips for improving fleet safety</h2>
         <a class="btn btn-primary text-uppercase p-3 small" href="#">Learn More</a>
       </div>
@@ -337,19 +337,19 @@
         <a href="#" class="no-underline p-3 d-block">
           <span>
             <img src="//images.ctfassets.net/bx9krvy0u3sx/1p2syaiXJxCTatgufQfmhG/0f9fb2c14a6e9f14e2cae1339b89a95d/Group_1377.svg" alt="" class="icon-img d-inline">
-            <h6 class="d-inline font-bold text-dark">Platform Overview</h6>
+            <h6 class="d-inline fw-bold text-dark">Platform Overview</h6>
           </span>
         </a>
         <a href="#" class="no-underline p-3 d-block">
           <span>
             <img src="//images.ctfassets.net/bx9krvy0u3sx/5TAcAG742tMOQTomQ3hX2e/6cc81f4715ee8bc6b041e48fff869e53/App_and_Driver_Workflows_Icon.svg" alt="" class="icon-img d-inline">
-            <h6 class="d-inline font-bold text-dark">Apps & Driver Workflows</h6>
+            <h6 class="d-inline fw-bold text-dark">Apps & Driver Workflows</h6>
           </span>
         </a>
         <a href="#" class="no-underline p-3 d-block">
           <span>
             <img src="//images.ctfassets.net/bx9krvy0u3sx/3TvftCAL6D4rZgUzxSiyOA/f533b57196aa14d55b332d66da1e6241/Dashcam.svg" alt="" class="icon-img d-inline">
-            <h6 class="d-inline font-bold text-dark">Video-Based Safety</h6>
+            <h6 class="d-inline fw-bold text-dark">Video-Based Safety</h6>
           </span>
         </a>
       </div>
@@ -357,19 +357,19 @@
         <a href="#" class="no-underline p-3 d-block">
           <span>
             <img src="//images.ctfassets.net/bx9krvy0u3sx/4LdtfZBWWy7PX29wA0g2x5/abbe950188cdb7575fb89ad2bf326c80/OEM-telematics-icon.svg" alt="" class="icon-img d-inline">
-            <h6 class="d-inline font-bold text-dark">Vehicle Telematics</h6>
+            <h6 class="d-inline fw-bold text-dark">Vehicle Telematics</h6>
           </span>
         </a>
         <a href="#" class="no-underline p-3 d-block">
           <span>
             <img src="//images.ctfassets.net/bx9krvy0u3sx/1vnerWyiPhcxM6i2UG54Cg/69808aad7f097fa703f214f990d1ac4b/Remote-Monitoring-Icon.svg" alt="" class="icon-img d-inline">
-            <h6 class="d-inline font-bold text-dark">Equipment Monitoring</h6>
+            <h6 class="d-inline fw-bold text-dark">Equipment Monitoring</h6>
           </span>
         </a>
         <a href="#" class="no-underline p-3 d-block">
           <span>
             <img src="//images.ctfassets.net/bx9krvy0u3sx/3xZya4wrm4MTFUFoOA3Ma8/2f9128707798aaf47b4201add60ce70b/Site_Visibility.svg" alt="" class="icon-img d-inline">
-            <h6 class="d-inline font-bold text-dark">Site Visibility</h6>
+            <h6 class="d-inline fw-bold text-dark">Site Visibility</h6>
           </span>
         </a>
       </div>

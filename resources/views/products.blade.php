@@ -27,7 +27,7 @@
                   <div class="col-md-6 col-sm-12 p-4">
                     <h3 class="pb-2">{{ $details['name'] }}</h3>
                     <p class="pb-2">{{ $details['description'] }}</p>
-                    <a class="text-uppercase no-underline small font-bold" href="#">Learn More ></a>
+                    <a class="text-uppercase no-underline small fw-bold" href="#">Learn More ></a>
                   </div>
                 @endif
               @endforeach
@@ -38,7 +38,7 @@
       <div class="m-5 py-3" id="Hardware">
         <div class="row">
           <div class="col-md-6 col-sm-12 m-auto">
-            <a class="text-uppercase no-underline small font-bold" href="#">
+            <a class="text-uppercase no-underline small fw-bold" href="#">
               VIEW HARDWARE MODELS & SPECS >
             </a>
           </div>
