@@ -2,6 +2,10 @@ ul#tabContents > li {
   cursor: pointer;
 }
 
+#solutions-hero-section .hero--solutions {
+    background: linear-gradient(270deg,#00263e 70%,transparent 0);
+}
+
 .icon-img {
   height: 40px;
   width: 40px;

@@ -95,7 +95,6 @@
       <p class="mb-4">AI dash cams capture incidents and exonerate and drivers, and coaching workflows help proactively train drivers to keep them safe.</p>
       <a href="#" class="btn btn-outline-primary small text-uppercase px-4 py-3">Learn More</a>
     </div>
-
   </div>
   <div class="row py-5" style="margin-left: 100px;">
     <div class="col-md-4">
@@ -105,8 +104,6 @@
     </div>
     <div class="col-md-6" style="margin-left: 100px;">
       <img src="{{ asset('assets/img/1905_Samsara_Dohrn_3312.jpg') }}" alt="1905_Samsara_Dohrn_3312.jpg" class="w-100">
-
-      </video>
     </div>
   </div>
 </div>
@@ -122,6 +119,37 @@
       <img src="{{ asset('assets/img/dohrn.png') }}" alt="dohrn.png" class="w-100">
 
       </video>
+    </div>
+  </div>
+</div>
+
+<div id="slideCarousel">
+  <div class="container">
+    <div class="row py-5" style="margin-left: 200px;">
+      <div class="col-md-5">
+        <img src="{{ asset('assets/img/fames_trucks_1.jpg') }}" alt="safety" class="w-100">
+        </video>
+      </div>
+      <div class="col-md-6">
+        <h3 class="mb-4">7 Ways GPS Tracking Helps You Run a Safer Fleet</h3>
+        <p class="mb-4">The value of real-time data goes well beyond GPS information. A telematics device that collects and integrates other real-time data - such as engine fault codes and harsh driving events - can be instrumental in helping you improve the efficiency, safety, and reliability of your entire fleet.</p>
+        <a href="#" class="text-black no-underline small text-uppercase">
+          Read the full article
+        </a>
+      </div>
+    </div>
+    <div class="row py-5" style="margin-left: 200px;">
+      <div class="col-md-5">
+        <img src="{{ asset('assets/img/face_detect.jpg') }}" alt="safety" class="w-100">
+        </video>
+      </div>
+      <div class="col-md-6">
+        <h3 class="mb-4">2020 Trends in Fleet</h3>
+        <p class="mb-4">From smarter dash cams to more telematics features for electric vehicles, fleet managers can expect a lot of change as new technology emerges in the coming decade.</p>
+        <a href="#" class="text-black no-underline small text-uppercase">
+          Read the full article
+        </a>
+      </div>
     </div>
   </div>
 </div>
