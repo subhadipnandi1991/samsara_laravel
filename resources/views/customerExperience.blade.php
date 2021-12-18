@@ -78,7 +78,7 @@
         <li>Bring customer data into one dashboard</li>
         <li>Access key data with the Admin App</li>
       </ul>
-      <a href="#" class="btn btn-outline-primary small text-uppercase p-3">documents and messaging</a>
+      <a href="#" class="btn btn-outline-primary small text-uppercase p-3">app marketplace</a>
     </div>
     <div class="col-md-6" style="margin-left: 100px;">
       <img src="{{ asset('assets/img/customer-experience-val-3.jpg')}}" alt="" class="w-100">
@@ -87,18 +87,48 @@
 </div>
 
 <div class="bg-blue-dark">
-  <div class="container">
+  <div class="container" style="padding:100px 200px;">
     <div class="row">
-      <div class="col-md-3">
-
+      <div class="col-md-3 text-center">
+        <img src="{{ asset('assets/img/uniti-quote-logo.png')}}" alt="" style="max-width:151px;">
       </div>
       <div class="col-md-9">
-
+        <h4 class="mb-4 text-white">"Samsara has the real-time data to help us track and tell a customer, ‘Your technician is en route and will be on site within 30 minutes.’” </h4>
+        <h6 class="text-uppercase text-white">Lindsay Hunt</h6>
+        <p class="fst-italic small text-white">Manager of CAD & GIS, Uniti Fiber</p>
+        <a href="#" class="text-uppercase small text-white btn btn-outline-primary py-3">Read the case study</a>
       </div>
     </div>
   </div>
 </div>
 
+<div class="row">
+  <div class="col-md-6">
+    <img src="{{ asset('assets/img/cs-row6-image-3.jpg')}}" alt="" class="w-100">
+  </div>
+  <div class="col-md-4" style="padding: 150px 50px">
+    <span class="fw-bold text-primary small text-uppercase mb-4">Onboarding</span>
+    <h4 class="mb-4">World-class implementation services and training</h4>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li class="text-uppercase small fw-bold no-bullet-list mb-4">24/7 US-Based Customer Support</li>
+          <li class="text-uppercase small fw-bold no-bullet-list mb-4">Implementation Consultants</li>
+          <li class="text-uppercase small fw-bold no-bullet-list mb-4">Ongoing Customer Success Support</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li class="text-uppercase small fw-bold no-bullet-list mb-4">Implementation Expert Marketplace</li>
+          <li class="text-uppercase small fw-bold no-bullet-list mb-4">On-Demand Virtual Training Center</li>
+          <li class="text-uppercase small fw-bold no-bullet-list mb-4">Pre-built Integrations and Open APIs</li>
+        </ul>
+      </div>
+    </div>
+    <a href="#" class="text-uppercase small btn btn-primary p-3">Learn More</a>
+  </div>
+
+</div>
 
 
 @endsection
