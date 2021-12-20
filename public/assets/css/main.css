@@ -6,6 +6,11 @@ ul#tabContents > li {
     background: linear-gradient(270deg,#00263e 70%,transparent 0);
 }
 
+#solution-benefits a:hover {
+  background-color: blue;
+  color: white;
+}
+
 .icon-img {
   height: 40px;
   width: 40px;

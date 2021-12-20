@@ -127,8 +127,55 @@
     </div>
     <a href="#" class="text-uppercase small btn btn-primary p-3">Learn More</a>
   </div>
-
 </div>
 
+<div id="solution-benefits" style="padding: 100px 200px;">
+  <div class="row">
+    <div class="col-md-5 bg-blue-lighter p-4">
+      <h2>The Connected Operations Platform</h2>
+      <p>Explore all of the solutions available to you and your business when you unify your operations with Samsara.</p>
+    </div>
+    <div class="col-md-7 border border-primary">
+      <div style="">
+        <div class="row">
+          <a href="#" class="no-underline col-md-6 p-3 border border-primary">
+            <h5 class="d-inline text-uppercase text-black small fw-bold">customer experience</h5>
+            <img src="{{ asset('assets/img/circulation_module_cust_exp-01.svg')}}"  alt="" style="width:40px;" class="d-inline text-right">
+          </a>
+          <a href="#" class="no-underline col-md-6 p-3 border border-primary">
+            <h5 class="d-inline text-uppercase text-black small fw-bold">compliance</h5>
+            <img src="{{ asset('assets/img/circulation_module_compliance-01.svg')}}"  alt="" style="width:40px;" class="d-inline">
+          </a>
+        </div>
+        <div class="row">
+          <a href="#" class="no-underline col-md-6 p-3 border border-primary">
+            <h5 class="d-inline text-uppercase text-black small fw-bold">efficiency</h5>
+            <img src="{{ asset('assets/img/circulation_module_efficiency-01.svg')}}"  alt="" style="width:40px;" class="d-inline">
+          </a>
+          <a href="#" class="no-underline col-md-6 p-3 border border-primary">
+            <h5 class="d-inline text-uppercase text-black small fw-bold">security</h5>
+            <img src="{{ asset('assets/img/circulation_module_security-01.svg')}}"  alt="" style="width:40px;" class="d-inline">
+          </a>
+        </div>
+        <div class="row">
+          <a href="#" class="no-underline col-md-6 p-3 border border-primary">
+            <h5 class="d-inline text-uppercase text-black small fw-bold">sustainability</h5>
+            <img src="{{ asset('assets/img/circulation_module_sustainability-01.svg')}}"  alt="" style="width:40px;" class="d-inline">
+          </a>
+          <a href="#" class="no-underline col-md-6 p-3 border border-primary">
+            <h5 class="d-inline text-uppercase text-black small fw-bold">safety</h5>
+            <img src="{{ asset('assets/img/circulation_module_safety-01.svg')}}"  alt="" style="width:40px;" class="d-inline">
+          </a>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="text-center" style='padding: 200px; background-image: url("https://images.ctfassets.net/bx9krvy0u3sx/1tlJgHJjJyWd1IQRPEDU6B/b321cf96756917bcdbcb514d9157fcd3/footer-pattern.svg"); background-repeat: no-repeat; background-size:cover;'>
+  <h3 class="mb-3">Get started with Samsara</h3>
+  <a href="#" class="text-uppercase small btn btn-primary p-3">Click for prices</a>
+</div>
 
 @endsection

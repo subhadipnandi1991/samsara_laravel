@@ -68,22 +68,26 @@
     </div>
     <div class="row">
       <div class="col-xs-12 col-md-6">
-        <div class="lang-select">
-          <img src="https://images.ctfassets.net/bx9krvy0u3sx/4evkfX9H4vFGqTr268gY9Z/0202ee3bc4ccd161f850b158e863551f/Group_5.svg" alt="globe">
-          <select name="select-region" class="select-region">
-  					<option value="BE">Belgique</option>
-  					<option value="CA">Canada</option>
-  					<option value="FR-CA">Canada - Français</option>
-  					<option value="DE">Deutschland</option>
-  					<option value="FR">France</option>
-  					<option value="MX">México</option>
-  					<option value="NL">Nederland</option>
-  					<option value="AT">Österreich</option>
-  					<option value="CH">Switzerland</option>
-  					<option value="UK">United Kingdom</option>
-  					<option value="IE">Ireland</option>
-  					<option value="US" selected="">United States</option>
-  				</select>
+        <div class="lang-select row">
+          <div class="col-md-2">
+            <img src="https://images.ctfassets.net/bx9krvy0u3sx/4evkfX9H4vFGqTr268gY9Z/0202ee3bc4ccd161f850b158e863551f/Group_5.svg" alt="globe">
+          </div>
+          <div class="col-md-10">
+            <select name="select-region" class="select-region">
+    					<option value="BE">Belgique</option>
+    					<option value="CA">Canada</option>
+    					<option value="FR-CA">Canada - Français</option>
+    					<option value="DE">Deutschland</option>
+    					<option value="FR">France</option>
+    					<option value="MX">México</option>
+    					<option value="NL">Nederland</option>
+    					<option value="AT">Österreich</option>
+    					<option value="CH">Switzerland</option>
+    					<option value="UK">United Kingdom</option>
+    					<option value="IE">Ireland</option>
+    					<option value="US" selected="">United States</option>
+    				</select>
+          </div>
         </div>
       </div>
       <div class="col-xs-12 col-md-6 copyright text-end">
