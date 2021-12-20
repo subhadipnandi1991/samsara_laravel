@@ -35,6 +35,7 @@ Route::get('/products/', [ProductController::class, 'productDetails']);
 Route::view('/products/safety', 'safety');
 Route::view('/company/contact', 'contact');
 Route::view('/industries/logistics', 'logistics');
+Route::view('/support/customerservices', 'customerservices');
 Route::view('/solutions/customer-experience', 'customerExperience');
 Route::get('/blog/', [BlogController::class, 'blogDetails']);
 Route::get('/blog/{id}', [BlogController::class, 'blogPage'])->name('blogDetails');
