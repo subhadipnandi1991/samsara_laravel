@@ -6,6 +6,16 @@ ul#tabContents > li {
     background: linear-gradient(270deg,#00263e 70%,transparent 0);
 }
 
+.text-xl {
+  font-size: 1.25rem;
+}
+
+.header-underline {
+  border-bottom: 3px solid #0384fb;
+  padding-bottom: 3px;
+  display: inline-block;
+}
+
 .hollow-quotes {
     position: absolute;
     left: 39%;
