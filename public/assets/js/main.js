@@ -191,7 +191,7 @@ $(document).ready(function() {
 
   // clickAction();
 
-  var stickyTop = $('.no-bullet-list').offset().top;
+  // var stickyTop = $('.no-bullet-list').offset().top;
 
     // $('li.has-megamenu').hover(function() {
     //   console.log("hovered");
@@ -203,23 +203,23 @@ $(document).ready(function() {
     // });
 
 
-  $(window).on('scroll load', function() {
-    var windowTop = $(window).scrollTop();
-
-    if (windowTop >= 56) {
-      $('#secondary-menu').removeClass('d-none').addClass('fixed-top');
-    } else {
-      $('#secondary-menu').removeClass('fixed-top').addClass('d-none');
-    }
-
-    if (stickyTop < windowTop) {
-      $('.sticky-list').css('position', 'fixed');
-      $('.sticky-list').css('top', '100px');
-    } else {
-      $('.sticky-list').css('position', 'relative');
-    }
-
-  });
+  // $(window).on('scroll load', function() {
+  //   var windowTop = $(window).scrollTop();
+  //
+  //   if (windowTop >= 56) {
+  //     $('#secondary-menu').removeClass('d-none').addClass('fixed-top');
+  //   } else {
+  //     $('#secondary-menu').removeClass('fixed-top').addClass('d-none');
+  //   }
+  //
+  //   if (stickyTop < windowTop) {
+  //     $('.sticky-list').css('position', 'fixed');
+  //     $('.sticky-list').css('top', '100px');
+  //   } else {
+  //     $('.sticky-list').css('position', 'relative');
+  //   }
+  //
+  // });
 
   $('li.custom-list a').on('click', function () {     // this is where the products category active effect is happening afetr clicking
     console.log(this);
@@ -255,5 +255,35 @@ $(document).ready(function() {
   $('ul#tabContents > li').removeClass(' active');
   $('li#aidashcams').addClass(" active");
   $('div#aidashcams').show();
+
+/* carousel effect */
+
+/* Default loading of slide*/
+  var id = 1;
+  $('.slides').hide();
+  $('div#slide_'+id).show();
+  var slide_num = $('.slides').length;
+  // console.log("slide_num:"+slide_num);
+
+  $('.carousel-buttons').click(function(event) {
+    // console.log(this);
+    if($(this).hasClass('next')) {
+      if(id < slide_num) {
+        id = id+1;
+      } else {
+        id = 1;
+      }
+    } else if ($(this).hasClass('previous')) {
+      if(id > 1) {
+        id = id-1;
+      } else {
+        id = slide_num;
+      }
+    }
+
+    event.preventDefault();
+    $('.slides').hide();
+    $('div#slide_'+id).show();
+  });
 
 });

@@ -134,8 +134,8 @@
 
 <div id="slideCarousel">
   <div class="container">
-    <div id="slide_1" class="row py-5" style="margin-left: 200px; box-shadow: 5px 5px 14px 0 rgba(0,0,0,.16);">
-      <div class="col-md-5">
+    <div id="slide_1" class="row slides" style="box-shadow: 5px 5px 14px 0 rgba(0,0,0,.16);">
+      <div class="col-md-5 p-0">
         <img src="{{ asset('assets/img/Untitled_presentation__9_.jpg') }}" alt="safety" class="w-100">
         </video>
       </div>
@@ -157,8 +157,8 @@
 
       </div>
     </div>
-    <div id="slide_2" class="row py-5" style="margin-left: 200px; box-shadow: 5px 5px 14px 0 rgba(0,0,0,.16);">
-      <div class="col-md-5">
+    <div id="slide_2" class="row slides" style="box-shadow: 5px 5px 14px 0 rgba(0,0,0,.16);">
+      <div class="col-md-5 p-0">
         <img src="{{ asset('assets/img/Untitled_presentation__6_.jpg') }}" alt="safety" class="w-100">
         </video>
       </div>
@@ -179,8 +179,8 @@
         <p class="fst-italic small">General Manager, Need It Now Delivers</p>
       </div>
     </div>
-    <div id="slide_3" class="row py-5" style="margin-left: 200px; box-shadow: 5px 5px 14px 0 rgba(0,0,0,.16);">
-      <div class="col-md-5">
+    <div id="slide_3" class="row slides" style="box-shadow: 5px 5px 14px 0 rgba(0,0,0,.16);">
+      <div class="col-md-5 p-0">
         <img src="{{ asset('assets/img/Untitled_presentation__7_.jpg') }}" alt="safety" class="w-100">
         </video>
       </div>
@@ -201,6 +201,19 @@
         <p class="fst-italic small">Director of Business, Outwest Express LLC</p>
       </div>
     </div>
+    <span>
+      <div class="d-flex justify-center mt-5">
+        <div class="row w-50 text-center">
+          <div class="col-6">
+            <a href="#" class="btn btn-outline-primary p-3 carousel-buttons previous" style="width:200px;">Previous</a>
+          </div>
+          <div class="col-6">
+            <a href="#" class="btn btn-outline-primary p-3 carousel-buttons next" style="width:200px;">Next</a>
+          </div>
+        </div>
+
+      </div>
+    </span>
   </div>
 </div>
 
