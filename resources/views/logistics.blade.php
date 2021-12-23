@@ -50,7 +50,7 @@
     <div class="col-md-3">
       <img src="{{ asset('assets/img/1905_Samsara_Dohrn_4806.png') }}" alt="" class="w-100">
     </div>
-    <div class="" style="z-index: -1; bottom: 40px; width: 601px; height: 511px; position: absolute; top: 900px; left: -12px;">
+    <div class="" style="z-index: -1; width: 601px; height: 511px; position: absolute; left: -12px;">
       <svg viewBox="0 0 663 553" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <g id="Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="illustrative-copy-26" transform="translate(-44.000000, -2751.000000)" stroke="#2DCCD3" stroke-width="2"><path d="M308,3162.65517 L308,3257 C132.66579,3243.75855 45,3151.06983 45,2978.93103 L45,2753 L308,2753 L308,3016.17241 L191.386792,3016.17241 C191.386792,3100.58663 230.257473,3149.41373 308,3162.65517 Z M637,3162.65517 L637,3257 C461.66579,3243.75855 374,3151.06983 374,2978.93103 L374,2753 L637,2753 L637,3016.17241 L520.386792,3016.17241 C520.386792,3100.58663 559.257473,3149.41373 637,3162.65517 Z" id="-copy-3" transform="translate(341.000000, 3005.000000) scale(1, -1) translate(-341.000000, -3005.000000)" vector-effect="non-scaling-stroke"></path></g></g></svg>
     </div>

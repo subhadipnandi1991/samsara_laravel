@@ -6,6 +6,11 @@ ul#tabContents > li {
     background: linear-gradient(270deg,#00263e 70%,transparent 0);
 }
 
+a.card-links:hover .card-body {
+  background-color: #00263e;
+  color: white;
+}
+
 .text-xl {
   font-size: 1.25rem;
 }
