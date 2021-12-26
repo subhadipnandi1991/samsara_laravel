@@ -39,6 +39,7 @@ Route::view('/support/customerservices', 'customerservices');
 Route::view('/resources/brand-assets', 'brandAssets');
 Route::view('/guides/fleet-safety', 'fleetSafety');
 Route::view('/solutions/customer-experience', 'customerExperience');
+Route::view('/company/about', 'about');
 Route::get('/blog/', [BlogController::class, 'blogDetails']);
 Route::get('/blog/{id}', [BlogController::class, 'blogPage'])->name('blogDetails');
 Route::get('/fetch-all-blogs-n-categories', [BlogController::class, 'fetchAllBlogsAndCategories']);

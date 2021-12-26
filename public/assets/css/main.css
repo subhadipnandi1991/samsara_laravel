@@ -6,6 +6,27 @@ ul#tabContents > li {
     background: linear-gradient(270deg,#00263e 70%,transparent 0);
 }
 
+.card-logo {
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-logo img {
+    position: absolute;
+    /* transition-duration: .1s; */
+    /* transition-timing-function: cubic-bezier(.4,0,.2,1); */
+    /* transition-property: all; */
+    filter: brightness(0) saturate(100%) invert(10%) sepia(79%) saturate(1477%) hue-rotate(178deg) brightness(97%) contrast(101%); */
+    /* top: 50%; */
+    /* left: 50%; */
+
+    /* transform: translate(-50%,-50%); */
+    opacity: .5;
+}
+
 a.card-links:hover .card-body {
   background-color: #00263e;
   color: white;
