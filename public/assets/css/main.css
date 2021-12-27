@@ -12,19 +12,24 @@ ul#tabContents > li {
   margin: 10px;
   display: flex;
   justify-content: center;
+  border-radius: 0.75rem;
 }
 
 .card-logo img {
     position: absolute;
-    /* transition-duration: .1s; */
-    /* transition-timing-function: cubic-bezier(.4,0,.2,1); */
-    /* transition-property: all; */
-    filter: brightness(0) saturate(100%) invert(10%) sepia(79%) saturate(1477%) hue-rotate(178deg) brightness(97%) contrast(101%); */
-    /* top: 50%; */
-    /* left: 50%; */
-
-    /* transform: translate(-50%,-50%); */
+    filter: brightness(0) saturate(100%) invert(10%) sepia(79%) saturate(1477%) hue-rotate(178deg) brightness(97%) contrast(101%);
     opacity: .5;
+}
+
+.pic-card {
+  width: 180px;
+  height: 180px;
+  margin: 10px;
+  border-radius: 0.75rem;  
+}
+
+.pic-card img {
+  border-radius: 0.75rem;
 }
 
 a.card-links:hover .card-body {
