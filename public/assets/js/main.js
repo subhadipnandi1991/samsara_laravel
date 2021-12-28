@@ -286,4 +286,95 @@ $(document).ready(function() {
     $('div#slide_'+id).show();
   });
 
+  /* offices carousel effect in about page */
+  $('.offc-slides').hide();
+  $('div#office-'+id).show();
+  var slide_num_offc_car = $('.offc-slides').length;
+
+  $('.offc-car-arrow').click(function(event) {
+    // console.log(this);
+    if($(this).hasClass('next--arrow')) {
+      if(id < slide_num_offc_car) {
+        id = id+1;
+      } else {
+        id = 1;
+      }
+    } else if ($(this).hasClass('prev--arrow')) {
+      if(id > 1) {
+        id = id-1;
+      } else {
+        id = slide_num_offc_car;
+      }
+    }
+
+    event.preventDefault();
+    $('.offc-slides').hide();
+    $('div#office-'+id).show();
+  });
+
+
+/* timeline carousel in the about page */
+  $('.tl-slides').hide();
+  $('div#timeline-'+id).show();
+  var slide_num_timeline = $('.tl-slides').length;
+
+  $('.timeline-arrow').click(function(event) {
+    // console.log(this);
+    if($(this).hasClass('next--arrow')) {
+      if(id < slide_num_timeline) {
+        id = id+1;
+      } else {
+        id = 1;
+      }
+    } else if ($(this).hasClass('prev--arrow')) {
+      if(id > 1) {
+        id = id-1;
+      } else {
+        id = slide_num_timeline;
+      }
+    }
+
+    event.preventDefault();
+    $('.tl-slides').hide();
+    $('div#timeline-'+id).show();
+  });
+
+  /* members carousel in the about page */
+    $('.members-slide').hide();
+    $('div#members-'+id).show();
+    var slide_num_members = $('.members-slide').length;
+
+    setInterval(function() {
+      // console.log("id:"+id);
+      if(id < slide_num_members) {
+        id = id+1;
+      } else {
+        id = 1;
+      }
+
+      $('.members-slide').hide();
+      $('div#members-'+id).show();
+    }, 3000);
+
+
+    $(window).on('scroll load', function() {
+      var url = location.href;
+      url_arr = url.split("/");
+      console.log(url_arr[url_arr.length -1]);
+      var windowTop = $(window).scrollTop();
+
+      // if (windowTop >= 56) {
+      //   $('#secondary-menu').removeClass('d-none').addClass('fixed-top');
+      // } else {
+      //   $('#secondary-menu').removeClass('fixed-top').addClass('d-none');
+      // }
+      //
+      // if (stickyTop < windowTop) {
+      //   $('.sticky-list').css('position', 'fixed');
+      //   $('.sticky-list').css('top', '100px');
+      // } else {
+      //   $('.sticky-list').css('position', 'relative');
+      // }
+
+    });
 });
